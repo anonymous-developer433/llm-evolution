@@ -27,10 +27,10 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 ```bash
 # Add this library from Git (PEP 508 URL)
-uv add "llm-evolution @ git+https://github.com/alexfdez1010/llm-evolution.git"
+uv add "llm-evolution @ git+https://github.com/anonymous-developer433/llm-evolution.git"
 
 # Add from a branch or tag
-uv add "llm-evolution @ git+https://github.com/alexfdez1010/llm-evolution.git@main"
+uv add "llm-evolution @ git+https://github.com/anonymous-developer433/llm-evolution.git@main"
 ```
 
 ### Install locally (if you are working from a checkout)
