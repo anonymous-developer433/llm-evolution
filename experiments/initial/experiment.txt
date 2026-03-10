@@ -1,0 +1,127 @@
+uv run python -m src.main
+[2026-03-06 18:11:33 CET] [ INFO  ] run_evolution                  | Initializing evolutionary algorithm for RVV kernel optimization
+[2026-03-06 18:11:33 CET] [ INFO  ] run_evolution                  | Experiment configuration | max_generations=10 population_size=6 num_runs_fitness=5
+[2026-03-06 18:11:42 CET] [ INFO  ] run_evolution                  | Initial population: 1 individual(s)
+[2026-03-06 18:12:31 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7070134371 fitness=-7070134371
+[2026-03-06 18:12:31 CET] [ INFO  ] run_evolution                  | Baseline fitness: -7070134371.0000000000
+[2026-03-06 18:12:31 CET] [ INFO  ] run_evolution                  | === Generation 0 | Population: 1 | Mutation prob: 1.00 | Num mutations: 4 ===
+[2026-03-06 18:12:31 CET] [ INFO  ] run_evolution                  | Generation 0 best fitness: -7070134371.0000000000
+[2026-03-06 18:21:03 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-06 18:21:03 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Rolling Diagonal Buffers (gen=0, prob=1.00)
+[2026-03-06 18:21:03 CET] [ INFO  ] run_evolution                  | Mutation 1/4 succeeded
+[2026-03-06 18:36:13 CET] [WARNING] LLMMutation._generate_valid_code | Candidate validation failed after 6 attempt(s)
+[2026-03-06 18:36:13 CET] [WARNING] LLMMutation.__call__           | Mutation candidate could not be validated
+[2026-03-06 18:36:13 CET] [ INFO  ] run_evolution                  | Mutation 2/4 skipped (probability)
+[2026-03-06 18:37:24 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Substitution Profile Precomputation (gen=0, prob=1.00)
+[2026-03-06 18:37:24 CET] [ INFO  ] run_evolution                  | Mutation 3/4 succeeded
+[2026-03-06 18:39:26 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Tail Loop Optimization (gen=0, prob=1.00)
+[2026-03-06 18:39:26 CET] [ INFO  ] run_evolution                  | Mutation 4/4 succeeded
+[2026-03-06 18:40:17 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7133556030 fitness=-7133556030
+[2026-03-06 18:41:17 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7094819222 fitness=-7094819222
+[2026-03-06 18:41:17 CET] [ INFO  ] run_evolution                  | After selection: 4 individuals
+[2026-03-06 18:41:17 CET] [ INFO  ] run_evolution                  | === Generation 1 | Population: 4 | Mutation prob: 0.92 | Num mutations: 3 ===
+[2026-03-06 18:41:17 CET] [ INFO  ] run_evolution                  | Generation 1 best fitness: -7070134371.0000000000
+[2026-03-06 18:42:52 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully
+[2026-03-06 18:42:52 CET] [ INFO  ] run_evolution                  | Crossover produced 1 offspring
+[2026-03-06 18:45:01 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Substitution Profile Precomputation (gen=1, prob=0.92)
+[2026-03-06 18:45:01 CET] [ INFO  ] run_evolution                  | Mutation 1/3 succeeded
+[2026-03-06 18:47:01 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Register Pressure Reduction (gen=1, prob=0.92)
+[2026-03-06 18:47:01 CET] [ INFO  ] run_evolution                  | Mutation 2/3 succeeded
+[2026-03-06 18:48:37 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: VL and VTYPE Control (gen=1, prob=0.92)
+[2026-03-06 18:48:37 CET] [ INFO  ] run_evolution                  | Mutation 3/3 succeeded
+[2026-03-06 18:49:28 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7104634387 fitness=-7104634387
+[2026-03-06 18:50:38 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7068177685 fitness=-7068177685
+[2026-03-06 18:50:38 CET] [ INFO  ] run_evolution                  | After selection: 6 individuals
+[2026-03-06 18:50:38 CET] [ INFO  ] run_evolution                  | === Generation 2 | Population: 6 | Mutation prob: 0.84 | Num mutations: 3 ===
+[2026-03-06 18:50:38 CET] [ INFO  ] run_evolution                  | Generation 2 best fitness: -7068177685.0000000000
+[2026-03-06 18:50:38 CET] [ INFO  ] run_evolution                  | New overall best fitness: -7068177685.0000000000
+[2026-03-06 18:52:15 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully
+[2026-03-06 18:52:15 CET] [ INFO  ] run_evolution                  | Crossover produced 1 offspring
+[2026-03-06 18:52:15 CET] [ INFO  ] run_evolution                  | Mutation 1/3 skipped (probability)
+[2026-03-06 18:52:15 CET] [ INFO  ] run_evolution                  | Mutation 2/3 skipped (probability)
+[2026-03-06 19:02:55 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 2 retry(s)
+[2026-03-06 19:02:55 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Traversal and Layout Co-design (gen=2, prob=0.84)
+[2026-03-06 19:02:55 CET] [ INFO  ] run_evolution                  | Mutation 3/3 succeeded
+[2026-03-06 19:03:46 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7069741672 fitness=-7069741672
+[2026-03-06 19:04:31 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6012110987 fitness=-6012110987
+[2026-03-06 19:04:31 CET] [ INFO  ] run_evolution                  | After selection: 6 individuals
+[2026-03-06 19:04:31 CET] [ INFO  ] run_evolution                  | === Generation 3 | Population: 6 | Mutation prob: 0.77 | Num mutations: 3 ===
+[2026-03-06 19:04:31 CET] [ INFO  ] run_evolution                  | Generation 3 best fitness: -6012110987.0000000000
+[2026-03-06 19:04:31 CET] [ INFO  ] run_evolution                  | New overall best fitness: -6012110987.0000000000
+[2026-03-06 19:06:19 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully
+[2026-03-06 19:06:19 CET] [ INFO  ] run_evolution                  | Crossover produced 1 offspring
+[2026-03-06 19:08:05 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Tail Loop Optimization (gen=3, prob=0.77)
+[2026-03-06 19:08:05 CET] [ INFO  ] run_evolution                  | Mutation 1/3 succeeded
+[2026-03-06 19:12:25 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-06 19:12:25 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Alignment and Padding (gen=3, prob=0.77)
+[2026-03-06 19:12:25 CET] [ INFO  ] run_evolution                  | Mutation 2/3 succeeded
+[2026-03-06 19:14:22 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Substitution Profile Precomputation (gen=3, prob=0.77)
+[2026-03-06 19:14:22 CET] [ INFO  ] run_evolution                  | Mutation 3/3 succeeded
+[2026-03-06 19:15:14 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7090943615 fitness=-7090943615
+[2026-03-06 19:16:04 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7077250389 fitness=-7077250389
+[2026-03-06 19:16:52 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6453115696 fitness=-6453115696
+[2026-03-06 19:17:40 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6666330112 fitness=-6666330112
+[2026-03-06 19:17:40 CET] [ INFO  ] run_evolution                  | After selection: 6 individuals
+[2026-03-06 19:17:40 CET] [ INFO  ] run_evolution                  | === Generation 4 | Population: 6 | Mutation prob: 0.69 | Num mutations: 2 ===
+[2026-03-06 19:17:40 CET] [ INFO  ] run_evolution                  | Generation 4 best fitness: -6012110987.0000000000
+[2026-03-06 19:20:08 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully
+[2026-03-06 19:20:08 CET] [ INFO  ] run_evolution                  | Crossover produced 1 offspring
+[2026-03-06 19:20:08 CET] [ INFO  ] run_evolution                  | Mutation 1/2 skipped (probability)
+[2026-03-06 19:27:38 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 2 retry(s)
+[2026-03-06 19:27:38 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Branch Elimination (gen=4, prob=0.69)
+[2026-03-06 19:27:38 CET] [ INFO  ] run_evolution                  | Mutation 2/2 succeeded
+[2026-03-06 19:28:24 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6045946815 fitness=-6045946815
+[2026-03-06 19:29:09 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6152238168 fitness=-6152238168
+[2026-03-06 19:29:09 CET] [ INFO  ] run_evolution                  | After selection: 6 individuals
+[2026-03-06 19:29:09 CET] [ INFO  ] run_evolution                  | === Generation 5 | Population: 6 | Mutation prob: 0.61 | Num mutations: 2 ===
+[2026-03-06 19:29:09 CET] [ INFO  ] run_evolution                  | Generation 5 best fitness: -6012110987.0000000000
+[2026-03-06 19:31:58 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully
+[2026-03-06 19:31:58 CET] [ INFO  ] run_evolution                  | Crossover produced 1 offspring
+[2026-03-06 19:33:14 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Masking Minimization (gen=5, prob=0.61)
+[2026-03-06 19:33:14 CET] [ INFO  ] run_evolution                  | Mutation 1/2 succeeded
+[2026-03-06 19:36:22 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Traversal and Layout Co-design (gen=5, prob=0.61)
+[2026-03-06 19:36:22 CET] [ INFO  ] run_evolution                  | Mutation 2/2 succeeded
+[2026-03-06 19:37:07 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5816417200 fitness=-5816417200
+[2026-03-06 19:37:54 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6654012177 fitness=-6654012177
+[2026-03-06 19:38:53 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=8969244910 fitness=-8969244910
+[2026-03-06 19:38:53 CET] [ INFO  ] run_evolution                  | After selection: 6 individuals
+[2026-03-06 19:38:53 CET] [ INFO  ] run_evolution                  | === Generation 6 | Population: 6 | Mutation prob: 0.53 | Num mutations: 2 ===
+[2026-03-06 19:38:53 CET] [ INFO  ] run_evolution                  | Generation 6 best fitness: -5816417200.0000000000
+[2026-03-06 19:38:53 CET] [ INFO  ] run_evolution                  | New overall best fitness: -5816417200.0000000000
+[2026-03-06 19:41:35 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully
+[2026-03-06 19:41:35 CET] [ INFO  ] run_evolution                  | Crossover produced 1 offspring
+[2026-03-06 19:43:30 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Rolling Diagonal Buffers (gen=6, prob=0.53)
+[2026-03-06 19:43:30 CET] [ INFO  ] run_evolution                  | Mutation 1/2 succeeded
+[2026-03-06 19:45:43 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Substitution Profile Precomputation (gen=6, prob=0.53)
+[2026-03-06 19:45:43 CET] [ INFO  ] run_evolution                  | Mutation 2/2 succeeded
+[2026-03-06 19:46:26 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5583453329 fitness=-5583453329
+[2026-03-06 19:47:11 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6003936563 fitness=-6003936563
+[2026-03-06 19:47:11 CET] [ INFO  ] run_evolution                  | After selection: 6 individuals
+[2026-03-06 19:47:11 CET] [ INFO  ] run_evolution                  | === Generation 7 | Population: 6 | Mutation prob: 0.46 | Num mutations: 1 ===
+[2026-03-06 19:47:11 CET] [ INFO  ] run_evolution                  | Generation 7 best fitness: -5583453329.0000000000
+[2026-03-06 19:47:11 CET] [ INFO  ] run_evolution                  | New overall best fitness: -5583453329.0000000000
+[2026-03-06 19:48:59 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully
+[2026-03-06 19:48:59 CET] [ INFO  ] run_evolution                  | Crossover produced 1 offspring
+[2026-03-06 19:48:59 CET] [ INFO  ] run_evolution                  | Mutation 1/1 skipped (probability)
+[2026-03-06 19:49:45 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6017956349 fitness=-6017956349
+[2026-03-06 19:49:45 CET] [ INFO  ] run_evolution                  | After selection: 6 individuals
+[2026-03-06 19:49:45 CET] [ INFO  ] run_evolution                  | === Generation 8 | Population: 6 | Mutation prob: 0.38 | Num mutations: 1 ===
+[2026-03-06 19:49:45 CET] [ INFO  ] run_evolution                  | Generation 8 best fitness: -5583453329.0000000000
+[2026-03-06 19:52:03 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully
+[2026-03-06 19:52:03 CET] [ INFO  ] run_evolution                  | Crossover produced 1 offspring
+[2026-03-06 19:52:03 CET] [ INFO  ] run_evolution                  | Mutation 1/1 skipped (probability)
+[2026-03-06 19:52:47 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5808738314 fitness=-5808738314
+[2026-03-06 19:52:47 CET] [ INFO  ] run_evolution                  | After selection: 6 individuals
+[2026-03-06 19:52:47 CET] [ INFO  ] run_evolution                  | === Generation 9 | Population: 6 | Mutation prob: 0.30 | Num mutations: 1 ===
+[2026-03-06 19:52:47 CET] [ INFO  ] run_evolution                  | Generation 9 best fitness: -5583453329.0000000000
+[2026-03-06 19:54:57 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully
+[2026-03-06 19:54:57 CET] [ INFO  ] run_evolution                  | Crossover produced 1 offspring
+[2026-03-06 19:54:57 CET] [ INFO  ] run_evolution                  | Mutation 1/1 skipped (probability)
+[2026-03-06 19:55:42 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5844230154 fitness=-5844230154
+[2026-03-06 19:55:42 CET] [ INFO  ] run_evolution                  | After selection: 6 individuals
+[2026-03-06 19:55:42 CET] [ INFO  ] run_evolution                  | ============================================================
+[2026-03-06 19:55:42 CET] [ INFO  ] run_evolution                  | Evolution complete!
+[2026-03-06 19:55:42 CET] [ INFO  ] run_evolution                  | Best fitness: -5583453329.0000000000
+[2026-03-06 19:55:42 CET] [ INFO  ] run_evolution                  | Baseline fitness: -7070134371.0000000000
+[2026-03-06 19:55:42 CET] [ INFO  ] run_evolution                  | Speedup: 1.27x faster
+[2026-03-06 19:55:42 CET] [ INFO  ] run_evolution                  | Best kernel saved to: /Users/alejandro/Projects/risc-v-sequence-alignment/best_kernel.c

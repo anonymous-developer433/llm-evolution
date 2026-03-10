@@ -1,0 +1,974 @@
+uv run python -m src.main
+[2026-03-08 08:50:06 CET] [ INFO  ] run_evolution                  | Initializing evolutionary algorithm for RVV kernel optimization
+[2026-03-08 08:50:06 CET] [ INFO  ] run_evolution                  | Experiment configuration | max_generations=20 population_size=10 num_runs_fitness=5
+[2026-03-08 08:50:14 CET] [ INFO  ] run_evolution                  | Initial population: 1 individual(s)
+[2026-03-08 08:51:03 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6976198876 fitness=-6976198876
+[2026-03-08 08:51:03 CET] [ INFO  ] run_evolution                  | Baseline fitness: -6976198876.0000000000
+[2026-03-08 08:51:03 CET] [ INFO  ] run_evolution                  | === Generation 0 | Population: 1 | Mutation prob: 1.00 | Crossover prob: 1.00 | Mutation rounds: 4 ===
+[2026-03-08 08:51:03 CET] [ INFO  ] run_evolution                  | Generation 0 best fitness: -6976198876.0000000000
+[2026-03-08 08:52:04 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: LMUL Tuning (gen=0, prob=1.00)
+[2026-03-08 08:52:04 CET] [ INFO  ] run_evolution                  | Mutation 1/4 succeeded
+[2026-03-08 08:54:49 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 08:54:49 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: LMUL Tuning (gen=0, prob=1.00)
+[2026-03-08 08:54:49 CET] [ INFO  ] run_evolution                  | Mutation 2/4 succeeded
+[2026-03-08 08:56:08 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: VL and VTYPE Control (gen=0, prob=1.00)
+[2026-03-08 08:56:08 CET] [ INFO  ] run_evolution                  | Mutation 3/4 succeeded
+[2026-03-08 08:58:49 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 08:58:49 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: LMUL Tuning (gen=0, prob=1.00)
+[2026-03-08 08:58:49 CET] [ INFO  ] run_evolution                  | Mutation 4/4 succeeded
+[2026-03-08 08:58:49 CET] [ INFO  ] run_evolution                  | Generation 0 operator summary | crossovers=0 skipped_crossovers=0 mutations=4 skipped_mutations=0
+[2026-03-08 08:59:38 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6791191425 fitness=-6791191425
+[2026-03-08 09:00:27 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6990856293 fitness=-6990856293
+[2026-03-08 09:01:16 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7018712494 fitness=-7018712494
+[2026-03-08 09:02:05 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6993381857 fitness=-6993381857
+[2026-03-08 09:02:05 CET] [ INFO  ] run_evolution                  | After selection: 5 individuals
+[2026-03-08 09:02:05 CET] [ INFO  ] run_evolution                  | === Generation 1 | Population: 5 | Mutation prob: 0.96 | Crossover prob: 0.96 | Mutation rounds: 1 ===
+[2026-03-08 09:02:05 CET] [ INFO  ] run_evolution                  | Generation 1 best fitness: -6791191425.0000000000
+[2026-03-08 09:02:05 CET] [ INFO  ] run_evolution                  | New overall best fitness: -6791191425.0000000000
+[2026-03-08 09:04:19 CET] [ INFO  ] LLMCrossover._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 09:04:19 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=1, prob=0.96)
+[2026-03-08 09:04:19 CET] [ INFO  ] run_evolution                  | Crossover 1/5 succeeded with 1 offspring
+[2026-03-08 09:05:32 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=1, prob=0.96)
+[2026-03-08 09:05:32 CET] [ INFO  ] run_evolution                  | Crossover 2/5 succeeded with 1 offspring
+[2026-03-08 09:07:10 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=1, prob=0.96)
+[2026-03-08 09:07:10 CET] [ INFO  ] run_evolution                  | Crossover 3/5 succeeded with 1 offspring
+[2026-03-08 09:09:01 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=1, prob=0.96)
+[2026-03-08 09:09:01 CET] [ INFO  ] run_evolution                  | Crossover 4/5 succeeded with 1 offspring
+[2026-03-08 09:10:56 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=1, prob=0.96)
+[2026-03-08 09:10:56 CET] [ INFO  ] run_evolution                  | Crossover 5/5 succeeded with 1 offspring
+[2026-03-08 09:12:49 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: VLEN-specific Specialization (gen=1, prob=0.96)
+[2026-03-08 09:12:49 CET] [ INFO  ] run_evolution                  | Mutation 1/5 succeeded
+[2026-03-08 09:14:26 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Sequence Pre-encoding (gen=1, prob=0.96)
+[2026-03-08 09:14:26 CET] [ INFO  ] run_evolution                  | Mutation 2/5 succeeded
+[2026-03-08 09:16:17 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Loop Unrolling (gen=1, prob=0.96)
+[2026-03-08 09:16:17 CET] [ INFO  ] run_evolution                  | Mutation 3/5 succeeded
+[2026-03-08 09:17:58 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: VL and VTYPE Control (gen=1, prob=0.96)
+[2026-03-08 09:17:58 CET] [ INFO  ] run_evolution                  | Mutation 4/5 succeeded
+[2026-03-08 09:29:57 CET] [WARNING] LLMMutation._generate_valid_code | Could not extract code from LLM response on attempt 6
+[2026-03-08 09:29:57 CET] [WARNING] LLMMutation.__call__           | Mutation candidate could not be validated
+[2026-03-08 09:29:57 CET] [ INFO  ] run_evolution                  | Mutation 5/5 skipped (probability or validation)
+[2026-03-08 09:29:57 CET] [ INFO  ] run_evolution                  | Generation 1 operator summary | crossovers=5 skipped_crossovers=0 mutations=4 skipped_mutations=1
+[2026-03-08 09:30:47 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6976516117 fitness=-6976516117
+[2026-03-08 09:31:37 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7007145243 fitness=-7007145243
+[2026-03-08 09:32:26 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7010978872 fitness=-7010978872
+[2026-03-08 09:33:11 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6249364226 fitness=-6249364226
+[2026-03-08 09:34:00 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6980374182 fitness=-6980374182
+[2026-03-08 09:35:07 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=10570516530 fitness=-10570516530
+[2026-03-08 09:35:53 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6434850847 fitness=-6434850847
+[2026-03-08 09:36:43 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6988365095 fitness=-6988365095
+[2026-03-08 09:37:31 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6981242149 fitness=-6981242149
+[2026-03-08 09:37:31 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-08 09:37:31 CET] [ INFO  ] run_evolution                  | === Generation 2 | Population: 10 | Mutation prob: 0.93 | Crossover prob: 0.93 | Mutation rounds: 1 ===
+[2026-03-08 09:37:31 CET] [ INFO  ] run_evolution                  | Generation 2 best fitness: -6249364226.0000000000
+[2026-03-08 09:37:31 CET] [ INFO  ] run_evolution                  | New overall best fitness: -6249364226.0000000000
+[2026-03-08 09:39:12 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=2, prob=0.93)
+[2026-03-08 09:39:12 CET] [ INFO  ] run_evolution                  | Crossover 1/10 succeeded with 1 offspring
+[2026-03-08 09:40:57 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=2, prob=0.93)
+[2026-03-08 09:40:57 CET] [ INFO  ] run_evolution                  | Crossover 2/10 succeeded with 1 offspring
+[2026-03-08 09:42:05 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=2, prob=0.93)
+[2026-03-08 09:42:05 CET] [ INFO  ] run_evolution                  | Crossover 3/10 succeeded with 1 offspring
+[2026-03-08 09:43:14 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=2, prob=0.93)
+[2026-03-08 09:43:14 CET] [ INFO  ] run_evolution                  | Crossover 4/10 succeeded with 1 offspring
+[2026-03-08 09:44:32 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=2, prob=0.93)
+[2026-03-08 09:44:32 CET] [ INFO  ] run_evolution                  | Crossover 5/10 succeeded with 1 offspring
+[2026-03-08 09:46:13 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=2, prob=0.93)
+[2026-03-08 09:46:13 CET] [ INFO  ] run_evolution                  | Crossover 6/10 succeeded with 1 offspring
+[2026-03-08 09:47:51 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=2, prob=0.93)
+[2026-03-08 09:47:51 CET] [ INFO  ] run_evolution                  | Crossover 7/10 succeeded with 1 offspring
+[2026-03-08 09:49:21 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=2, prob=0.93)
+[2026-03-08 09:49:21 CET] [ INFO  ] run_evolution                  | Crossover 8/10 succeeded with 1 offspring
+[2026-03-08 09:49:21 CET] [ INFO  ] run_evolution                  | Crossover 9/10 skipped (probability or validation)
+[2026-03-08 09:50:52 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=2, prob=0.93)
+[2026-03-08 09:50:52 CET] [ INFO  ] run_evolution                  | Crossover 10/10 succeeded with 1 offspring
+[2026-03-08 09:50:52 CET] [ INFO  ] run_evolution                  | Mutation 1/10 skipped (probability or validation)
+[2026-03-08 09:54:23 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 09:54:23 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Pointer Arithmetic Simplification (gen=2, prob=0.93)
+[2026-03-08 09:54:23 CET] [ INFO  ] run_evolution                  | Mutation 2/10 succeeded
+[2026-03-08 09:56:10 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Instruction Scheduling (gen=2, prob=0.93)
+[2026-03-08 09:56:10 CET] [ INFO  ] run_evolution                  | Mutation 3/10 succeeded
+[2026-03-08 10:03:42 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 10:03:42 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Rolling Diagonal Buffers (gen=2, prob=0.93)
+[2026-03-08 10:03:42 CET] [ INFO  ] run_evolution                  | Mutation 4/10 succeeded
+[2026-03-08 10:05:42 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: VL and VTYPE Control (gen=2, prob=0.93)
+[2026-03-08 10:05:42 CET] [ INFO  ] run_evolution                  | Mutation 5/10 succeeded
+[2026-03-08 10:07:45 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: VL and VTYPE Control (gen=2, prob=0.93)
+[2026-03-08 10:07:45 CET] [ INFO  ] run_evolution                  | Mutation 6/10 succeeded
+[2026-03-08 10:09:22 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Substitution Profile Precomputation (gen=2, prob=0.93)
+[2026-03-08 10:09:22 CET] [ INFO  ] run_evolution                  | Mutation 7/10 succeeded
+[2026-03-08 10:11:27 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Tail Loop Optimization (gen=2, prob=0.93)
+[2026-03-08 10:11:27 CET] [ INFO  ] run_evolution                  | Mutation 8/10 succeeded
+[2026-03-08 10:13:12 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Substitution Profile Precomputation (gen=2, prob=0.93)
+[2026-03-08 10:13:12 CET] [ INFO  ] run_evolution                  | Mutation 9/10 succeeded
+[2026-03-08 10:14:59 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Loop Unrolling (gen=2, prob=0.93)
+[2026-03-08 10:14:59 CET] [ INFO  ] run_evolution                  | Mutation 10/10 succeeded
+[2026-03-08 10:14:59 CET] [ INFO  ] run_evolution                  | Generation 2 operator summary | crossovers=9 skipped_crossovers=1 mutations=9 skipped_mutations=1
+[2026-03-08 10:15:46 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6262660071 fitness=-6262660071
+[2026-03-08 10:16:33 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6457467526 fitness=-6457467526
+[2026-03-08 10:17:19 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6441046111 fitness=-6441046111
+[2026-03-08 10:18:05 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6444516111 fitness=-6444516111
+[2026-03-08 10:18:54 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7015995725 fitness=-7015995725
+[2026-03-08 10:19:43 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7005084942 fitness=-7005084942
+[2026-03-08 10:20:32 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7004207403 fitness=-7004207403
+[2026-03-08 10:21:21 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7011033089 fitness=-7011033089
+[2026-03-08 10:22:07 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6453101411 fitness=-6453101411
+[2026-03-08 10:22:54 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6524985066 fitness=-6524985066
+[2026-03-08 10:23:43 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7152540489 fitness=-7152540489
+[2026-03-08 10:24:26 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5917118540 fitness=-5917118540
+[2026-03-08 10:25:16 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6990890198 fitness=-6990890198
+[2026-03-08 10:26:04 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7002652880 fitness=-7002652880
+[2026-03-08 10:26:59 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=8171007426 fitness=-8171007426
+[2026-03-08 10:27:48 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7011210508 fitness=-7011210508
+[2026-03-08 10:28:42 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=8179908668 fitness=-8179908668
+[2026-03-08 10:29:31 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=7010069952 fitness=-7010069952
+[2026-03-08 10:29:31 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-08 10:29:31 CET] [ INFO  ] run_evolution                  | === Generation 3 | Population: 10 | Mutation prob: 0.89 | Crossover prob: 0.89 | Mutation rounds: 1 ===
+[2026-03-08 10:29:31 CET] [ INFO  ] run_evolution                  | Generation 3 best fitness: -5917118540.0000000000
+[2026-03-08 10:29:31 CET] [ INFO  ] run_evolution                  | New overall best fitness: -5917118540.0000000000
+[2026-03-08 10:31:50 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=3, prob=0.89)
+[2026-03-08 10:31:50 CET] [ INFO  ] run_evolution                  | Crossover 1/10 succeeded with 1 offspring
+[2026-03-08 10:33:35 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=3, prob=0.89)
+[2026-03-08 10:33:35 CET] [ INFO  ] run_evolution                  | Crossover 2/10 succeeded with 1 offspring
+[2026-03-08 10:33:35 CET] [ INFO  ] run_evolution                  | Crossover 3/10 skipped (probability or validation)
+[2026-03-08 10:35:15 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=3, prob=0.89)
+[2026-03-08 10:35:15 CET] [ INFO  ] run_evolution                  | Crossover 4/10 succeeded with 1 offspring
+[2026-03-08 10:36:52 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=3, prob=0.89)
+[2026-03-08 10:36:52 CET] [ INFO  ] run_evolution                  | Crossover 5/10 succeeded with 1 offspring
+[2026-03-08 10:36:52 CET] [ INFO  ] run_evolution                  | Crossover 6/10 skipped (probability or validation)
+[2026-03-08 10:38:28 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=3, prob=0.89)
+[2026-03-08 10:38:28 CET] [ INFO  ] run_evolution                  | Crossover 7/10 succeeded with 1 offspring
+[2026-03-08 10:41:09 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=3, prob=0.89)
+[2026-03-08 10:41:09 CET] [ INFO  ] run_evolution                  | Crossover 8/10 succeeded with 1 offspring
+[2026-03-08 10:42:52 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=3, prob=0.89)
+[2026-03-08 10:42:52 CET] [ INFO  ] run_evolution                  | Crossover 9/10 succeeded with 1 offspring
+[2026-03-08 10:43:58 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=3, prob=0.89)
+[2026-03-08 10:43:58 CET] [ INFO  ] run_evolution                  | Crossover 10/10 succeeded with 1 offspring
+[2026-03-08 10:43:58 CET] [ INFO  ] run_evolution                  | Mutation 1/10 skipped (probability or validation)
+[2026-03-08 10:53:20 CET] [WARNING] LLMMutation._generate_valid_code | Could not extract code from LLM response on attempt 5
+[2026-03-08 10:53:20 CET] [WARNING] LLMMutation.__call__           | Mutation candidate could not be validated
+[2026-03-08 10:53:20 CET] [ INFO  ] run_evolution                  | Mutation 2/10 skipped (probability or validation)
+[2026-03-08 10:57:52 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 10:57:52 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Alignment and Padding (gen=3, prob=0.89)
+[2026-03-08 10:57:52 CET] [ INFO  ] run_evolution                  | Mutation 3/10 succeeded
+[2026-03-08 10:59:22 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Instruction Scheduling (gen=3, prob=0.89)
+[2026-03-08 10:59:22 CET] [ INFO  ] run_evolution                  | Mutation 4/10 succeeded
+[2026-03-08 11:01:26 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Software Pipelining (gen=3, prob=0.89)
+[2026-03-08 11:01:26 CET] [ INFO  ] run_evolution                  | Mutation 5/10 succeeded
+[2026-03-08 11:03:08 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Tail Loop Optimization (gen=3, prob=0.89)
+[2026-03-08 11:03:08 CET] [ INFO  ] run_evolution                  | Mutation 6/10 succeeded
+[2026-03-08 11:05:42 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Tail Loop Optimization (gen=3, prob=0.89)
+[2026-03-08 11:05:42 CET] [ INFO  ] run_evolution                  | Mutation 7/10 succeeded
+[2026-03-08 11:08:29 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Software Pipelining (gen=3, prob=0.89)
+[2026-03-08 11:08:29 CET] [ INFO  ] run_evolution                  | Mutation 8/10 succeeded
+[2026-03-08 11:08:29 CET] [ INFO  ] run_evolution                  | Mutation 9/10 skipped (probability or validation)
+[2026-03-08 11:11:25 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: VLEN-specific Specialization (gen=3, prob=0.89)
+[2026-03-08 11:11:25 CET] [ INFO  ] run_evolution                  | Mutation 10/10 succeeded
+[2026-03-08 11:11:25 CET] [ INFO  ] run_evolution                  | Generation 3 operator summary | crossovers=8 skipped_crossovers=2 mutations=7 skipped_mutations=3
+[2026-03-08 11:12:05 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5310470190 fitness=-5310470190
+[2026-03-08 11:12:52 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6570451890 fitness=-6570451890
+[2026-03-08 11:13:38 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6450247459 fitness=-6450247459
+[2026-03-08 11:14:24 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6446689787 fitness=-6446689787
+[2026-03-08 11:15:11 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6464414252 fitness=-6464414252
+[2026-03-08 11:15:51 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5299066957 fitness=-5299066957
+[2026-03-08 11:16:38 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6540736337 fitness=-6540736337
+[2026-03-08 11:17:24 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6447486210 fitness=-6447486210
+[2026-03-08 11:18:08 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5879007975 fitness=-5879007975
+[2026-03-08 11:18:54 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6545491606 fitness=-6545491606
+[2026-03-08 11:19:48 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=8023168135 fitness=-8023168135
+[2026-03-08 11:20:34 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6458696297 fitness=-6458696297
+[2026-03-08 11:21:20 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6437163323 fitness=-6437163323
+[2026-03-08 11:22:14 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=8017263389 fitness=-8017263389
+[2026-03-08 11:23:04 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6803991843 fitness=-6803991843
+[2026-03-08 11:23:04 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-08 11:23:04 CET] [ INFO  ] run_evolution                  | === Generation 4 | Population: 10 | Mutation prob: 0.85 | Crossover prob: 0.85 | Mutation rounds: 1 ===
+[2026-03-08 11:23:04 CET] [ INFO  ] run_evolution                  | Generation 4 best fitness: -5299066957.0000000000
+[2026-03-08 11:23:04 CET] [ INFO  ] run_evolution                  | New overall best fitness: -5299066957.0000000000
+[2026-03-08 11:23:04 CET] [ INFO  ] run_evolution                  | Crossover 1/10 skipped (probability or validation)
+[2026-03-08 11:24:59 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=4, prob=0.85)
+[2026-03-08 11:24:59 CET] [ INFO  ] run_evolution                  | Crossover 2/10 succeeded with 1 offspring
+[2026-03-08 11:27:55 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=4, prob=0.85)
+[2026-03-08 11:27:55 CET] [ INFO  ] run_evolution                  | Crossover 3/10 succeeded with 1 offspring
+[2026-03-08 11:30:29 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=4, prob=0.85)
+[2026-03-08 11:30:29 CET] [ INFO  ] run_evolution                  | Crossover 4/10 succeeded with 1 offspring
+[2026-03-08 11:32:42 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=4, prob=0.85)
+[2026-03-08 11:32:42 CET] [ INFO  ] run_evolution                  | Crossover 5/10 succeeded with 1 offspring
+[2026-03-08 11:34:54 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=4, prob=0.85)
+[2026-03-08 11:34:54 CET] [ INFO  ] run_evolution                  | Crossover 6/10 succeeded with 1 offspring
+[2026-03-08 11:36:48 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=4, prob=0.85)
+[2026-03-08 11:36:48 CET] [ INFO  ] run_evolution                  | Crossover 7/10 succeeded with 1 offspring
+[2026-03-08 11:38:59 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=4, prob=0.85)
+[2026-03-08 11:38:59 CET] [ INFO  ] run_evolution                  | Crossover 8/10 succeeded with 1 offspring
+[2026-03-08 11:41:17 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=4, prob=0.85)
+[2026-03-08 11:41:17 CET] [ INFO  ] run_evolution                  | Crossover 9/10 succeeded with 1 offspring
+[2026-03-08 11:41:17 CET] [ INFO  ] run_evolution                  | Crossover 10/10 skipped (probability or validation)
+[2026-03-08 11:44:23 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Tail Loop Optimization (gen=4, prob=0.85)
+[2026-03-08 11:44:23 CET] [ INFO  ] run_evolution                  | Mutation 1/10 succeeded
+[2026-03-08 11:49:26 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 11:49:26 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Tail Loop Optimization (gen=4, prob=0.85)
+[2026-03-08 11:49:26 CET] [ INFO  ] run_evolution                  | Mutation 2/10 succeeded
+[2026-03-08 11:49:26 CET] [ INFO  ] run_evolution                  | Mutation 3/10 skipped (probability or validation)
+[2026-03-08 11:51:35 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Software Pipelining (gen=4, prob=0.85)
+[2026-03-08 11:51:35 CET] [ INFO  ] run_evolution                  | Mutation 4/10 succeeded
+[2026-03-08 11:53:44 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Loop Unrolling (gen=4, prob=0.85)
+[2026-03-08 11:53:44 CET] [ INFO  ] run_evolution                  | Mutation 5/10 succeeded
+[2026-03-08 11:56:54 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Anti-diagonal Tiling (gen=4, prob=0.85)
+[2026-03-08 11:56:54 CET] [ INFO  ] run_evolution                  | Mutation 6/10 succeeded
+[2026-03-08 11:59:08 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: VLEN-specific Specialization (gen=4, prob=0.85)
+[2026-03-08 11:59:08 CET] [ INFO  ] run_evolution                  | Mutation 7/10 succeeded
+[2026-03-08 12:01:46 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Software Pipelining (gen=4, prob=0.85)
+[2026-03-08 12:01:46 CET] [ INFO  ] run_evolution                  | Mutation 8/10 succeeded
+[2026-03-08 12:03:04 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Register Pressure Reduction (gen=4, prob=0.85)
+[2026-03-08 12:03:04 CET] [ INFO  ] run_evolution                  | Mutation 9/10 succeeded
+[2026-03-08 12:05:17 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Loop Unrolling (gen=4, prob=0.85)
+[2026-03-08 12:05:17 CET] [ INFO  ] run_evolution                  | Mutation 10/10 succeeded
+[2026-03-08 12:05:17 CET] [ INFO  ] run_evolution                  | Generation 4 operator summary | crossovers=8 skipped_crossovers=2 mutations=9 skipped_mutations=1
+[2026-03-08 12:05:58 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5269598051 fitness=-5269598051
+[2026-03-08 12:06:39 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5406415359 fitness=-5406415359
+[2026-03-08 12:07:20 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5348062507 fitness=-5348062507
+[2026-03-08 12:08:05 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6246522177 fitness=-6246522177
+[2026-03-08 12:08:50 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6238400983 fitness=-6238400983
+[2026-03-08 12:09:35 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6235803992 fitness=-6235803992
+[2026-03-08 12:10:22 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6460398418 fitness=-6460398418
+[2026-03-08 12:11:02 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5264834150 fitness=-5264834150
+[2026-03-08 12:11:44 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5299520855 fitness=-5299520855
+[2026-03-08 12:12:24 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5303207103 fitness=-5303207103
+[2026-03-08 12:13:09 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5932916233 fitness=-5932916233
+[2026-03-08 12:13:54 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6254772192 fitness=-6254772192
+[2026-03-08 12:14:24 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=3082664481 fitness=-3082664481
+[2026-03-08 12:15:11 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6485003101 fitness=-6485003101
+[2026-03-08 12:15:57 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6404706488 fitness=-6404706488
+[2026-03-08 12:16:43 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6434064090 fitness=-6434064090
+[2026-03-08 12:17:30 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6431310493 fitness=-6431310493
+[2026-03-08 12:17:30 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-08 12:17:30 CET] [ INFO  ] run_evolution                  | === Generation 5 | Population: 10 | Mutation prob: 0.82 | Crossover prob: 0.82 | Mutation rounds: 1 ===
+[2026-03-08 12:17:30 CET] [ INFO  ] run_evolution                  | Generation 5 best fitness: -3082664481.0000000000
+[2026-03-08 12:17:30 CET] [ INFO  ] run_evolution                  | New overall best fitness: -3082664481.0000000000
+[2026-03-08 12:20:22 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=5, prob=0.82)
+[2026-03-08 12:20:22 CET] [ INFO  ] run_evolution                  | Crossover 1/10 succeeded with 1 offspring
+[2026-03-08 12:20:22 CET] [ INFO  ] run_evolution                  | Crossover 2/10 skipped (probability or validation)
+[2026-03-08 12:22:40 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=5, prob=0.82)
+[2026-03-08 12:22:40 CET] [ INFO  ] run_evolution                  | Crossover 3/10 succeeded with 1 offspring
+[2026-03-08 12:24:51 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=5, prob=0.82)
+[2026-03-08 12:24:51 CET] [ INFO  ] run_evolution                  | Crossover 4/10 succeeded with 1 offspring
+[2026-03-08 12:27:31 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=5, prob=0.82)
+[2026-03-08 12:27:31 CET] [ INFO  ] run_evolution                  | Crossover 5/10 succeeded with 1 offspring
+[2026-03-08 12:30:17 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=5, prob=0.82)
+[2026-03-08 12:30:17 CET] [ INFO  ] run_evolution                  | Crossover 6/10 succeeded with 1 offspring
+[2026-03-08 12:33:36 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=5, prob=0.82)
+[2026-03-08 12:33:36 CET] [ INFO  ] run_evolution                  | Crossover 7/10 succeeded with 1 offspring
+[2026-03-08 12:35:57 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=5, prob=0.82)
+[2026-03-08 12:35:57 CET] [ INFO  ] run_evolution                  | Crossover 8/10 succeeded with 1 offspring
+[2026-03-08 12:38:34 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=5, prob=0.82)
+[2026-03-08 12:38:34 CET] [ INFO  ] run_evolution                  | Crossover 9/10 succeeded with 1 offspring
+[2026-03-08 12:41:57 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=5, prob=0.82)
+[2026-03-08 12:41:57 CET] [ INFO  ] run_evolution                  | Crossover 10/10 succeeded with 1 offspring
+[2026-03-08 12:50:20 CET] [WARNING] LLMMutation._generate_valid_code | Could not extract code from LLM response on attempt 4
+[2026-03-08 12:50:20 CET] [WARNING] LLMMutation.__call__           | Mutation candidate could not be validated
+[2026-03-08 12:50:20 CET] [ INFO  ] run_evolution                  | Mutation 1/10 skipped (probability or validation)
+[2026-03-08 13:00:54 CET] [WARNING] LLMMutation._generate_valid_code | Could not extract code from LLM response on attempt 3
+[2026-03-08 13:00:54 CET] [WARNING] LLMMutation.__call__           | Mutation candidate could not be validated
+[2026-03-08 13:00:54 CET] [ INFO  ] run_evolution                  | Mutation 2/10 skipped (probability or validation)
+[2026-03-08 13:02:47 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Sequence Pre-encoding (gen=5, prob=0.82)
+[2026-03-08 13:02:47 CET] [ INFO  ] run_evolution                  | Mutation 3/10 succeeded
+[2026-03-08 13:05:30 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Branch Elimination (gen=5, prob=0.82)
+[2026-03-08 13:05:30 CET] [ INFO  ] run_evolution                  | Mutation 4/10 succeeded
+[2026-03-08 13:05:30 CET] [ INFO  ] run_evolution                  | Mutation 5/10 skipped (probability or validation)
+[2026-03-08 13:10:17 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 13:10:17 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: VLEN-specific Specialization (gen=5, prob=0.82)
+[2026-03-08 13:10:17 CET] [ INFO  ] run_evolution                  | Mutation 6/10 succeeded
+[2026-03-08 13:12:24 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Register Pressure Reduction (gen=5, prob=0.82)
+[2026-03-08 13:12:24 CET] [ INFO  ] run_evolution                  | Mutation 7/10 succeeded
+[2026-03-08 13:15:15 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Substitution Profile Precomputation (gen=5, prob=0.82)
+[2026-03-08 13:15:15 CET] [ INFO  ] run_evolution                  | Mutation 8/10 succeeded
+[2026-03-08 13:18:21 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Tail Loop Optimization (gen=5, prob=0.82)
+[2026-03-08 13:18:21 CET] [ INFO  ] run_evolution                  | Mutation 9/10 succeeded
+[2026-03-08 13:20:50 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Software Pipelining (gen=5, prob=0.82)
+[2026-03-08 13:20:50 CET] [ INFO  ] run_evolution                  | Mutation 10/10 succeeded
+[2026-03-08 13:20:50 CET] [ INFO  ] run_evolution                  | Generation 5 operator summary | crossovers=9 skipped_crossovers=1 mutations=7 skipped_mutations=3
+[2026-03-08 13:21:21 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=3189027095 fitness=-3189027095
+[2026-03-08 13:22:01 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5054610705 fitness=-5054610705
+[2026-03-08 13:22:40 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5041887347 fitness=-5041887347
+[2026-03-08 13:23:19 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5065052847 fitness=-5065052847
+[2026-03-08 13:23:59 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5088876273 fitness=-5088876273
+[2026-03-08 13:24:38 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5046723750 fitness=-5046723750
+[2026-03-08 13:25:17 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5055416951 fitness=-5055416951
+[2026-03-08 13:25:57 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5080077845 fitness=-5080077845
+[2026-03-08 13:26:36 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5014650814 fitness=-5014650814
+[2026-03-08 13:27:15 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5047358815 fitness=-5047358815
+[2026-03-08 13:27:55 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5049742865 fitness=-5049742865
+[2026-03-08 13:28:34 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5052006689 fitness=-5052006689
+[2026-03-08 13:29:14 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5030479088 fitness=-5030479088
+[2026-03-08 13:29:53 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5105933906 fitness=-5105933906
+[2026-03-08 13:30:34 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5193297309 fitness=-5193297309
+[2026-03-08 13:31:18 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=6062560542 fitness=-6062560542
+[2026-03-08 13:31:18 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-08 13:31:18 CET] [ INFO  ] run_evolution                  | === Generation 6 | Population: 10 | Mutation prob: 0.78 | Crossover prob: 0.78 | Mutation rounds: 1 ===
+[2026-03-08 13:31:18 CET] [ INFO  ] run_evolution                  | Generation 6 best fitness: -3082664481.0000000000
+[2026-03-08 13:39:17 CET] [ INFO  ] LLMCrossover._generate_valid_code | Candidate repaired successfully after 2 retry(s)
+[2026-03-08 13:39:17 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=6, prob=0.78)
+[2026-03-08 13:39:17 CET] [ INFO  ] run_evolution                  | Crossover 1/10 succeeded with 1 offspring
+[2026-03-08 13:42:09 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=6, prob=0.78)
+[2026-03-08 13:42:09 CET] [ INFO  ] run_evolution                  | Crossover 2/10 succeeded with 1 offspring
+[2026-03-08 13:42:09 CET] [ INFO  ] run_evolution                  | Crossover 3/10 skipped (probability or validation)
+[2026-03-08 13:44:09 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=6, prob=0.78)
+[2026-03-08 13:44:09 CET] [ INFO  ] run_evolution                  | Crossover 4/10 succeeded with 1 offspring
+[2026-03-08 13:46:56 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=6, prob=0.78)
+[2026-03-08 13:46:56 CET] [ INFO  ] run_evolution                  | Crossover 5/10 succeeded with 1 offspring
+[2026-03-08 13:46:56 CET] [ INFO  ] run_evolution                  | Crossover 6/10 skipped (probability or validation)
+[2026-03-08 13:46:56 CET] [ INFO  ] run_evolution                  | Crossover 7/10 skipped (probability or validation)
+[2026-03-08 13:52:58 CET] [ INFO  ] LLMCrossover._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 13:52:58 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=6, prob=0.78)
+[2026-03-08 13:52:58 CET] [ INFO  ] run_evolution                  | Crossover 8/10 succeeded with 1 offspring
+[2026-03-08 13:56:02 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=6, prob=0.78)
+[2026-03-08 13:56:02 CET] [ INFO  ] run_evolution                  | Crossover 9/10 succeeded with 1 offspring
+[2026-03-08 13:59:13 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=6, prob=0.78)
+[2026-03-08 13:59:13 CET] [ INFO  ] run_evolution                  | Crossover 10/10 succeeded with 1 offspring
+[2026-03-08 14:01:32 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Masking Minimization (gen=6, prob=0.78)
+[2026-03-08 14:01:32 CET] [ INFO  ] run_evolution                  | Mutation 1/10 succeeded
+[2026-03-08 14:04:07 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: VL and VTYPE Control (gen=6, prob=0.78)
+[2026-03-08 14:04:07 CET] [ INFO  ] run_evolution                  | Mutation 2/10 succeeded
+[2026-03-08 14:07:20 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Substitution Profile Precomputation (gen=6, prob=0.78)
+[2026-03-08 14:07:20 CET] [ INFO  ] run_evolution                  | Mutation 3/10 succeeded
+[2026-03-08 14:09:57 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Substitution Profile Precomputation (gen=6, prob=0.78)
+[2026-03-08 14:09:57 CET] [ INFO  ] run_evolution                  | Mutation 4/10 succeeded
+[2026-03-08 14:13:03 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Tail Loop Optimization (gen=6, prob=0.78)
+[2026-03-08 14:13:03 CET] [ INFO  ] run_evolution                  | Mutation 5/10 succeeded
+[2026-03-08 14:21:18 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 14:21:18 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: VLEN-specific Specialization (gen=6, prob=0.78)
+[2026-03-08 14:21:18 CET] [ INFO  ] run_evolution                  | Mutation 6/10 succeeded
+[2026-03-08 14:27:44 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 2 retry(s)
+[2026-03-08 14:27:44 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Tail Loop Optimization (gen=6, prob=0.78)
+[2026-03-08 14:27:44 CET] [ INFO  ] run_evolution                  | Mutation 7/10 succeeded
+[2026-03-08 14:33:52 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 14:33:52 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: VLEN-specific Specialization (gen=6, prob=0.78)
+[2026-03-08 14:33:52 CET] [ INFO  ] run_evolution                  | Mutation 8/10 succeeded
+[2026-03-08 14:33:52 CET] [ INFO  ] run_evolution                  | Mutation 9/10 skipped (probability or validation)
+[2026-03-08 14:37:06 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Loop Unrolling (gen=6, prob=0.78)
+[2026-03-08 14:37:06 CET] [ INFO  ] run_evolution                  | Mutation 10/10 succeeded
+[2026-03-08 14:37:06 CET] [ INFO  ] run_evolution                  | Generation 6 operator summary | crossovers=7 skipped_crossovers=3 mutations=9 skipped_mutations=1
+[2026-03-08 14:37:45 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=4641860121 fitness=-4641860121
+[2026-03-08 14:38:25 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5053481055 fitness=-5053481055
+[2026-03-08 14:39:04 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5070904960 fitness=-5070904960
+[2026-03-08 14:39:44 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5070334555 fitness=-5070334555
+[2026-03-08 14:40:24 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2936940241 fitness=-2936940241
+[2026-03-08 14:41:04 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5085287792 fitness=-5085287792
+[2026-03-08 14:41:32 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2999225900 fitness=-2999225900
+[2026-03-08 14:42:03 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=3170948406 fitness=-3170948406
+[2026-03-08 14:42:47 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5976676959 fitness=-5976676959
+[2026-03-08 14:43:37 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5059960157 fitness=-5059960157
+[2026-03-08 14:44:18 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5403604006 fitness=-5403604006
+[2026-03-08 14:44:58 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5036117689 fitness=-5036117689
+[2026-03-08 14:45:41 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5895947407 fitness=-5895947407
+[2026-03-08 14:46:21 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5079069767 fitness=-5079069767
+[2026-03-08 14:46:21 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-08 14:46:21 CET] [ INFO  ] run_evolution                  | === Generation 7 | Population: 10 | Mutation prob: 0.74 | Crossover prob: 0.74 | Mutation rounds: 1 ===
+[2026-03-08 14:46:21 CET] [ INFO  ] run_evolution                  | Generation 7 best fitness: -2936940241.0000000000
+[2026-03-08 14:46:21 CET] [ INFO  ] run_evolution                  | New overall best fitness: -2936940241.0000000000
+[2026-03-08 14:48:54 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=7, prob=0.74)
+[2026-03-08 14:48:54 CET] [ INFO  ] run_evolution                  | Crossover 1/10 succeeded with 1 offspring
+[2026-03-08 14:51:37 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=7, prob=0.74)
+[2026-03-08 14:51:37 CET] [ INFO  ] run_evolution                  | Crossover 2/10 succeeded with 1 offspring
+[2026-03-08 14:57:43 CET] [ INFO  ] LLMCrossover._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 14:57:43 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=7, prob=0.74)
+[2026-03-08 14:57:43 CET] [ INFO  ] run_evolution                  | Crossover 3/10 succeeded with 1 offspring
+[2026-03-08 14:57:43 CET] [ INFO  ] run_evolution                  | Crossover 4/10 skipped (probability or validation)
+[2026-03-08 15:00:06 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=7, prob=0.74)
+[2026-03-08 15:00:06 CET] [ INFO  ] run_evolution                  | Crossover 5/10 succeeded with 1 offspring
+[2026-03-08 15:03:07 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=7, prob=0.74)
+[2026-03-08 15:03:07 CET] [ INFO  ] run_evolution                  | Crossover 6/10 succeeded with 1 offspring
+[2026-03-08 15:06:10 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=7, prob=0.74)
+[2026-03-08 15:06:10 CET] [ INFO  ] run_evolution                  | Crossover 7/10 succeeded with 1 offspring
+[2026-03-08 15:06:10 CET] [ INFO  ] run_evolution                  | Crossover 8/10 skipped (probability or validation)
+[2026-03-08 15:08:56 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=7, prob=0.74)
+[2026-03-08 15:08:56 CET] [ INFO  ] run_evolution                  | Crossover 9/10 succeeded with 1 offspring
+[2026-03-08 15:08:56 CET] [ INFO  ] run_evolution                  | Crossover 10/10 skipped (probability or validation)
+[2026-03-08 15:11:15 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Anti-diagonal Tiling (gen=7, prob=0.74)
+[2026-03-08 15:11:15 CET] [ INFO  ] run_evolution                  | Mutation 1/10 succeeded
+[2026-03-08 15:14:17 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Pointer Arithmetic Simplification (gen=7, prob=0.74)
+[2026-03-08 15:14:17 CET] [ INFO  ] run_evolution                  | Mutation 2/10 succeeded
+[2026-03-08 15:25:36 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 2 retry(s)
+[2026-03-08 15:25:36 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Anti-diagonal Tiling (gen=7, prob=0.74)
+[2026-03-08 15:25:36 CET] [ INFO  ] run_evolution                  | Mutation 3/10 succeeded
+[2026-03-08 15:27:58 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: LMUL Tuning (gen=7, prob=0.74)
+[2026-03-08 15:27:58 CET] [ INFO  ] run_evolution                  | Mutation 4/10 succeeded
+[2026-03-08 15:27:58 CET] [ INFO  ] run_evolution                  | Mutation 5/10 skipped (probability or validation)
+[2026-03-08 15:30:46 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Branch Elimination (gen=7, prob=0.74)
+[2026-03-08 15:30:46 CET] [ INFO  ] run_evolution                  | Mutation 6/10 succeeded
+[2026-03-08 15:30:46 CET] [ INFO  ] run_evolution                  | Mutation 7/10 skipped (probability or validation)
+[2026-03-08 15:30:46 CET] [ INFO  ] run_evolution                  | Mutation 8/10 skipped (probability or validation)
+[2026-03-08 15:34:09 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Loop Unrolling (gen=7, prob=0.74)
+[2026-03-08 15:34:09 CET] [ INFO  ] run_evolution                  | Mutation 9/10 succeeded
+[2026-03-08 15:36:49 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Sequence Pre-encoding (gen=7, prob=0.74)
+[2026-03-08 15:36:49 CET] [ INFO  ] run_evolution                  | Mutation 10/10 succeeded
+[2026-03-08 15:36:49 CET] [ INFO  ] run_evolution                  | Generation 7 operator summary | crossovers=7 skipped_crossovers=3 mutations=7 skipped_mutations=3
+[2026-03-08 15:37:20 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2958157077 fitness=-2958157077
+[2026-03-08 15:37:59 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5029009611 fitness=-5029009611
+[2026-03-08 15:38:30 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=3143577762 fitness=-3143577762
+[2026-03-08 15:38:59 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2975950198 fitness=-2975950198
+[2026-03-08 15:39:39 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5031604611 fitness=-5031604611
+[2026-03-08 15:40:18 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5018371891 fitness=-5018371891
+[2026-03-08 15:40:57 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5041363709 fitness=-5041363709
+[2026-03-08 15:41:26 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2936333734 fitness=-2936333734
+[2026-03-08 15:42:05 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2714297069 fitness=-2714297069
+[2026-03-08 15:42:35 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=3237394771 fitness=-3237394771
+[2026-03-08 15:43:13 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=4649684830 fitness=-4649684830
+[2026-03-08 15:43:53 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5076565977 fitness=-5076565977
+[2026-03-08 15:44:32 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=5018567383 fitness=-5018567383
+[2026-03-08 15:44:32 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-08 15:44:32 CET] [ INFO  ] run_evolution                  | === Generation 8 | Population: 10 | Mutation prob: 0.71 | Crossover prob: 0.71 | Mutation rounds: 1 ===
+[2026-03-08 15:44:32 CET] [ INFO  ] run_evolution                  | Generation 8 best fitness: -2714297069.0000000000
+[2026-03-08 15:44:32 CET] [ INFO  ] run_evolution                  | New overall best fitness: -2714297069.0000000000
+[2026-03-08 15:47:37 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=8, prob=0.71)
+[2026-03-08 15:47:37 CET] [ INFO  ] run_evolution                  | Crossover 1/10 succeeded with 1 offspring
+[2026-03-08 15:49:51 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=8, prob=0.71)
+[2026-03-08 15:49:51 CET] [ INFO  ] run_evolution                  | Crossover 2/10 succeeded with 1 offspring
+[2026-03-08 15:52:16 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=8, prob=0.71)
+[2026-03-08 15:52:16 CET] [ INFO  ] run_evolution                  | Crossover 3/10 succeeded with 1 offspring
+[2026-03-08 15:54:57 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=8, prob=0.71)
+[2026-03-08 15:54:57 CET] [ INFO  ] run_evolution                  | Crossover 4/10 succeeded with 1 offspring
+[2026-03-08 15:57:20 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=8, prob=0.71)
+[2026-03-08 15:57:20 CET] [ INFO  ] run_evolution                  | Crossover 5/10 succeeded with 1 offspring
+[2026-03-08 15:57:20 CET] [ INFO  ] run_evolution                  | Crossover 6/10 skipped (probability or validation)
+[2026-03-08 15:59:53 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=8, prob=0.71)
+[2026-03-08 15:59:53 CET] [ INFO  ] run_evolution                  | Crossover 7/10 succeeded with 1 offspring
+[2026-03-08 16:04:17 CET] [ INFO  ] LLMCrossover._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 16:04:17 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=8, prob=0.71)
+[2026-03-08 16:04:17 CET] [ INFO  ] run_evolution                  | Crossover 8/10 succeeded with 1 offspring
+[2026-03-08 16:06:54 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=8, prob=0.71)
+[2026-03-08 16:06:54 CET] [ INFO  ] run_evolution                  | Crossover 9/10 succeeded with 1 offspring
+[2026-03-08 16:09:12 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=8, prob=0.71)
+[2026-03-08 16:09:12 CET] [ INFO  ] run_evolution                  | Crossover 10/10 succeeded with 1 offspring
+[2026-03-08 16:12:13 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Instruction Scheduling (gen=8, prob=0.71)
+[2026-03-08 16:12:13 CET] [ INFO  ] run_evolution                  | Mutation 1/10 succeeded
+[2026-03-08 16:15:01 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: VLEN-specific Specialization (gen=8, prob=0.71)
+[2026-03-08 16:15:01 CET] [ INFO  ] run_evolution                  | Mutation 2/10 succeeded
+[2026-03-08 16:17:55 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Substitution Profile Precomputation (gen=8, prob=0.71)
+[2026-03-08 16:17:55 CET] [ INFO  ] run_evolution                  | Mutation 3/10 succeeded
+[2026-03-08 16:21:05 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Loop Unrolling (gen=8, prob=0.71)
+[2026-03-08 16:21:05 CET] [ INFO  ] run_evolution                  | Mutation 4/10 succeeded
+[2026-03-08 16:34:01 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 2 retry(s)
+[2026-03-08 16:34:01 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Rolling Diagonal Buffers (gen=8, prob=0.71)
+[2026-03-08 16:34:01 CET] [ INFO  ] run_evolution                  | Mutation 5/10 succeeded
+[2026-03-08 16:47:09 CET] [WARNING] LLMMutation._generate_valid_code | Could not extract code from LLM response on attempt 4
+[2026-03-08 16:47:09 CET] [WARNING] LLMMutation.__call__           | Mutation candidate could not be validated
+[2026-03-08 16:47:09 CET] [ INFO  ] run_evolution                  | Mutation 6/10 skipped (probability or validation)
+[2026-03-08 16:47:09 CET] [ INFO  ] run_evolution                  | Mutation 7/10 skipped (probability or validation)
+[2026-03-08 16:47:09 CET] [ INFO  ] run_evolution                  | Mutation 8/10 skipped (probability or validation)
+[2026-03-08 16:54:23 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: VLEN-specific Specialization (gen=8, prob=0.71)
+[2026-03-08 16:54:23 CET] [ INFO  ] run_evolution                  | Mutation 9/10 succeeded
+[2026-03-08 16:56:58 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Anti-diagonal Tiling (gen=8, prob=0.71)
+[2026-03-08 16:56:58 CET] [ INFO  ] run_evolution                  | Mutation 10/10 succeeded
+[2026-03-08 16:56:58 CET] [ INFO  ] run_evolution                  | Generation 8 operator summary | crossovers=9 skipped_crossovers=1 mutations=7 skipped_mutations=3
+[2026-03-08 16:57:29 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2950117678 fitness=-2950117678
+[2026-03-08 16:57:57 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2924495647 fitness=-2924495647
+[2026-03-08 16:58:27 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2968931531 fitness=-2968931531
+[2026-03-08 16:58:56 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2949115799 fitness=-2949115799
+[2026-03-08 16:59:25 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2983088700 fitness=-2983088700
+[2026-03-08 16:59:55 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=3197677299 fitness=-3197677299
+[2026-03-08 17:00:25 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=3137600663 fitness=-3137600663
+[2026-03-08 17:00:55 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2997101386 fitness=-2997101386
+[2026-03-08 17:01:25 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=3173262144 fitness=-3173262144
+[2026-03-08 17:01:52 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2688065795 fitness=-2688065795
+[2026-03-08 17:02:24 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=3623045896 fitness=-3623045896
+[2026-03-08 17:03:01 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=4491561418 fitness=-4491561418
+[2026-03-08 17:03:31 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2959469590 fitness=-2959469590
+[2026-03-08 17:04:10 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=4940029277 fitness=-4940029277
+[2026-03-08 17:04:42 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=3174607456 fitness=-3174607456
+[2026-03-08 17:05:12 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=3110552015 fitness=-3110552015
+[2026-03-08 17:05:12 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-08 17:05:12 CET] [ INFO  ] run_evolution                  | === Generation 9 | Population: 10 | Mutation prob: 0.67 | Crossover prob: 0.67 | Mutation rounds: 1 ===
+[2026-03-08 17:05:12 CET] [ INFO  ] run_evolution                  | Generation 9 best fitness: -2688065795.0000000000
+[2026-03-08 17:05:12 CET] [ INFO  ] run_evolution                  | New overall best fitness: -2688065795.0000000000
+[2026-03-08 17:05:12 CET] [ INFO  ] run_evolution                  | Crossover 1/10 skipped (probability or validation)
+[2026-03-08 17:05:12 CET] [ INFO  ] run_evolution                  | Crossover 2/10 skipped (probability or validation)
+[2026-03-08 17:11:57 CET] [ INFO  ] LLMCrossover._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 17:11:57 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=9, prob=0.67)
+[2026-03-08 17:11:57 CET] [ INFO  ] run_evolution                  | Crossover 3/10 succeeded with 1 offspring
+[2026-03-08 17:11:57 CET] [ INFO  ] run_evolution                  | Crossover 4/10 skipped (probability or validation)
+[2026-03-08 17:14:20 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=9, prob=0.67)
+[2026-03-08 17:14:20 CET] [ INFO  ] run_evolution                  | Crossover 5/10 succeeded with 1 offspring
+[2026-03-08 17:14:20 CET] [ INFO  ] run_evolution                  | Crossover 6/10 skipped (probability or validation)
+[2026-03-08 17:16:46 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=9, prob=0.67)
+[2026-03-08 17:16:46 CET] [ INFO  ] run_evolution                  | Crossover 7/10 succeeded with 1 offspring
+[2026-03-08 17:23:34 CET] [ INFO  ] LLMCrossover._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 17:23:34 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=9, prob=0.67)
+[2026-03-08 17:23:34 CET] [ INFO  ] run_evolution                  | Crossover 8/10 succeeded with 1 offspring
+[2026-03-08 17:26:43 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=9, prob=0.67)
+[2026-03-08 17:26:43 CET] [ INFO  ] run_evolution                  | Crossover 9/10 succeeded with 1 offspring
+[2026-03-08 17:29:01 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=9, prob=0.67)
+[2026-03-08 17:29:01 CET] [ INFO  ] run_evolution                  | Crossover 10/10 succeeded with 1 offspring
+[2026-03-08 17:33:04 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 17:33:04 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Alignment and Padding (gen=9, prob=0.67)
+[2026-03-08 17:33:04 CET] [ INFO  ] run_evolution                  | Mutation 1/10 succeeded
+[2026-03-08 17:33:04 CET] [ INFO  ] run_evolution                  | Mutation 2/10 skipped (probability or validation)
+[2026-03-08 17:41:51 CET] [WARNING] LLMMutation._generate_valid_code | Could not extract code from LLM response on attempt 3
+[2026-03-08 17:41:51 CET] [WARNING] LLMMutation.__call__           | Mutation candidate could not be validated
+[2026-03-08 17:41:51 CET] [ INFO  ] run_evolution                  | Mutation 3/10 skipped (probability or validation)
+[2026-03-08 17:41:51 CET] [ INFO  ] run_evolution                  | Mutation 4/10 skipped (probability or validation)
+[2026-03-08 17:45:38 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Loop Unrolling (gen=9, prob=0.67)
+[2026-03-08 17:45:38 CET] [ INFO  ] run_evolution                  | Mutation 5/10 succeeded
+[2026-03-08 17:48:16 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Alignment and Padding (gen=9, prob=0.67)
+[2026-03-08 17:48:16 CET] [ INFO  ] run_evolution                  | Mutation 6/10 succeeded
+[2026-03-08 17:51:26 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Software Pipelining (gen=9, prob=0.67)
+[2026-03-08 17:51:26 CET] [ INFO  ] run_evolution                  | Mutation 7/10 succeeded
+[2026-03-08 18:01:15 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 18:01:15 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: VLEN-specific Specialization (gen=9, prob=0.67)
+[2026-03-08 18:01:15 CET] [ INFO  ] run_evolution                  | Mutation 8/10 succeeded
+[2026-03-08 18:04:53 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Substitution Profile Precomputation (gen=9, prob=0.67)
+[2026-03-08 18:04:53 CET] [ INFO  ] run_evolution                  | Mutation 9/10 succeeded
+[2026-03-08 18:11:23 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 18:11:23 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Anti-diagonal Tiling (gen=9, prob=0.67)
+[2026-03-08 18:11:23 CET] [ INFO  ] run_evolution                  | Mutation 10/10 succeeded
+[2026-03-08 18:11:23 CET] [ INFO  ] run_evolution                  | Generation 9 operator summary | crossovers=6 skipped_crossovers=4 mutations=7 skipped_mutations=3
+[2026-03-08 18:11:53 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2889884814 fitness=-2889884814
+[2026-03-08 18:12:23 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2965967942 fitness=-2965967942
+[2026-03-08 18:12:52 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2946513781 fitness=-2946513781
+[2026-03-08 18:13:20 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2875390824 fitness=-2875390824
+[2026-03-08 18:13:49 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2959297442 fitness=-2959297442
+[2026-03-08 18:14:19 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2934522247 fitness=-2934522247
+[2026-03-08 18:14:58 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2958457860 fitness=-2958457860
+[2026-03-08 18:15:27 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2799104885 fitness=-2799104885
+[2026-03-08 18:15:56 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2924152715 fitness=-2924152715
+[2026-03-08 18:16:28 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2959658195 fitness=-2959658195
+[2026-03-08 18:17:02 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=3776214491 fitness=-3776214491
+[2026-03-08 18:17:31 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2933675811 fitness=-2933675811
+[2026-03-08 18:17:31 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-08 18:17:31 CET] [ INFO  ] run_evolution                  | === Generation 10 | Population: 10 | Mutation prob: 0.63 | Crossover prob: 0.63 | Mutation rounds: 1 ===
+[2026-03-08 18:17:31 CET] [ INFO  ] run_evolution                  | Generation 10 best fitness: -2688065795.0000000000
+[2026-03-08 18:20:27 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=10, prob=0.63)
+[2026-03-08 18:20:27 CET] [ INFO  ] run_evolution                  | Crossover 1/10 succeeded with 1 offspring
+[2026-03-08 18:23:22 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=10, prob=0.63)
+[2026-03-08 18:23:22 CET] [ INFO  ] run_evolution                  | Crossover 2/10 succeeded with 1 offspring
+[2026-03-08 18:25:57 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=10, prob=0.63)
+[2026-03-08 18:25:57 CET] [ INFO  ] run_evolution                  | Crossover 3/10 succeeded with 1 offspring
+[2026-03-08 18:25:57 CET] [ INFO  ] run_evolution                  | Crossover 4/10 skipped (probability or validation)
+[2026-03-08 18:29:01 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=10, prob=0.63)
+[2026-03-08 18:29:01 CET] [ INFO  ] run_evolution                  | Crossover 5/10 succeeded with 1 offspring
+[2026-03-08 18:29:01 CET] [ INFO  ] run_evolution                  | Crossover 6/10 skipped (probability or validation)
+[2026-03-08 18:31:22 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=10, prob=0.63)
+[2026-03-08 18:31:22 CET] [ INFO  ] run_evolution                  | Crossover 7/10 succeeded with 1 offspring
+[2026-03-08 18:34:21 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=10, prob=0.63)
+[2026-03-08 18:34:21 CET] [ INFO  ] run_evolution                  | Crossover 8/10 succeeded with 1 offspring
+[2026-03-08 18:36:39 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=10, prob=0.63)
+[2026-03-08 18:36:39 CET] [ INFO  ] run_evolution                  | Crossover 9/10 succeeded with 1 offspring
+[2026-03-08 18:40:27 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=10, prob=0.63)
+[2026-03-08 18:40:27 CET] [ INFO  ] run_evolution                  | Crossover 10/10 succeeded with 1 offspring
+[2026-03-08 18:53:11 CET] [WARNING] LLMMutation._generate_valid_code | Could not extract code from LLM response on attempt 4
+[2026-03-08 18:53:11 CET] [WARNING] LLMMutation.__call__           | Mutation candidate could not be validated
+[2026-03-08 18:53:11 CET] [ INFO  ] run_evolution                  | Mutation 1/10 skipped (probability or validation)
+[2026-03-08 18:56:16 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Sequence Pre-encoding (gen=10, prob=0.63)
+[2026-03-08 18:56:16 CET] [ INFO  ] run_evolution                  | Mutation 2/10 succeeded
+[2026-03-08 18:59:42 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Loop Unrolling (gen=10, prob=0.63)
+[2026-03-08 18:59:42 CET] [ INFO  ] run_evolution                  | Mutation 3/10 succeeded
+[2026-03-08 18:59:42 CET] [ INFO  ] run_evolution                  | Mutation 4/10 skipped (probability or validation)
+[2026-03-08 19:02:33 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Anti-diagonal Tiling (gen=10, prob=0.63)
+[2026-03-08 19:02:33 CET] [ INFO  ] run_evolution                  | Mutation 5/10 succeeded
+[2026-03-08 19:02:33 CET] [ INFO  ] run_evolution                  | Mutation 6/10 skipped (probability or validation)
+[2026-03-08 19:04:44 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Masking Minimization (gen=10, prob=0.63)
+[2026-03-08 19:04:44 CET] [ INFO  ] run_evolution                  | Mutation 7/10 succeeded
+[2026-03-08 19:07:23 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Anti-diagonal Tiling (gen=10, prob=0.63)
+[2026-03-08 19:07:23 CET] [ INFO  ] run_evolution                  | Mutation 8/10 succeeded
+[2026-03-08 19:07:23 CET] [ INFO  ] run_evolution                  | Mutation 9/10 skipped (probability or validation)
+[2026-03-08 19:07:23 CET] [ INFO  ] run_evolution                  | Mutation 10/10 skipped (probability or validation)
+[2026-03-08 19:07:23 CET] [ INFO  ] run_evolution                  | Generation 10 operator summary | crossovers=8 skipped_crossovers=2 mutations=5 skipped_mutations=5
+[2026-03-08 19:07:54 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2931612752 fitness=-2931612752
+[2026-03-08 19:08:22 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2878071478 fitness=-2878071478
+[2026-03-08 19:08:51 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2801552136 fitness=-2801552136
+[2026-03-08 19:09:20 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2882784725 fitness=-2882784725
+[2026-03-08 19:09:49 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2945982874 fitness=-2945982874
+[2026-03-08 19:10:18 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2887599148 fitness=-2887599148
+[2026-03-08 19:10:47 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2948845054 fitness=-2948845054
+[2026-03-08 19:11:16 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2891020510 fitness=-2891020510
+[2026-03-08 19:11:45 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2710130501 fitness=-2710130501
+[2026-03-08 19:12:14 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2809466006 fitness=-2809466006
+[2026-03-08 19:12:44 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2887868226 fitness=-2887868226
+[2026-03-08 19:13:14 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2924893947 fitness=-2924893947
+[2026-03-08 19:13:14 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-08 19:13:14 CET] [ INFO  ] run_evolution                  | === Generation 11 | Population: 10 | Mutation prob: 0.59 | Crossover prob: 0.59 | Mutation rounds: 1 ===
+[2026-03-08 19:13:14 CET] [ INFO  ] run_evolution                  | Generation 11 best fitness: -2688065795.0000000000
+[2026-03-08 19:13:14 CET] [ INFO  ] run_evolution                  | Crossover 1/10 skipped (probability or validation)
+[2026-03-08 19:19:01 CET] [ INFO  ] LLMCrossover._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 19:19:01 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=11, prob=0.59)
+[2026-03-08 19:19:01 CET] [ INFO  ] run_evolution                  | Crossover 2/10 succeeded with 1 offspring
+[2026-03-08 19:19:01 CET] [ INFO  ] run_evolution                  | Crossover 3/10 skipped (probability or validation)
+[2026-03-08 19:19:01 CET] [ INFO  ] run_evolution                  | Crossover 4/10 skipped (probability or validation)
+[2026-03-08 19:19:01 CET] [ INFO  ] run_evolution                  | Crossover 5/10 skipped (probability or validation)
+[2026-03-08 19:19:01 CET] [ INFO  ] run_evolution                  | Crossover 6/10 skipped (probability or validation)
+[2026-03-08 19:21:53 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=11, prob=0.59)
+[2026-03-08 19:21:53 CET] [ INFO  ] run_evolution                  | Crossover 7/10 succeeded with 1 offspring
+[2026-03-08 19:24:49 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=11, prob=0.59)
+[2026-03-08 19:24:49 CET] [ INFO  ] run_evolution                  | Crossover 8/10 succeeded with 1 offspring
+[2026-03-08 19:28:02 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=11, prob=0.59)
+[2026-03-08 19:28:02 CET] [ INFO  ] run_evolution                  | Crossover 9/10 succeeded with 1 offspring
+[2026-03-08 19:28:02 CET] [ INFO  ] run_evolution                  | Crossover 10/10 skipped (probability or validation)
+[2026-03-08 19:28:02 CET] [ INFO  ] run_evolution                  | Mutation 1/10 skipped (probability or validation)
+[2026-03-08 19:28:02 CET] [ INFO  ] run_evolution                  | Mutation 2/10 skipped (probability or validation)
+[2026-03-08 19:31:19 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Register Pressure Reduction (gen=11, prob=0.59)
+[2026-03-08 19:31:19 CET] [ INFO  ] run_evolution                  | Mutation 3/10 succeeded
+[2026-03-08 19:31:19 CET] [ INFO  ] run_evolution                  | Mutation 4/10 skipped (probability or validation)
+[2026-03-08 19:34:22 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Alignment and Padding (gen=11, prob=0.59)
+[2026-03-08 19:34:22 CET] [ INFO  ] run_evolution                  | Mutation 5/10 succeeded
+[2026-03-08 19:36:31 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Anti-diagonal Tiling (gen=11, prob=0.59)
+[2026-03-08 19:36:31 CET] [ INFO  ] run_evolution                  | Mutation 6/10 succeeded
+[2026-03-08 19:36:31 CET] [ INFO  ] run_evolution                  | Mutation 7/10 skipped (probability or validation)
+[2026-03-08 19:36:31 CET] [ INFO  ] run_evolution                  | Mutation 8/10 skipped (probability or validation)
+[2026-03-08 19:49:52 CET] [WARNING] LLMMutation._generate_valid_code | Could not extract code from LLM response on attempt 4
+[2026-03-08 19:49:52 CET] [WARNING] LLMMutation.__call__           | Mutation candidate could not be validated
+[2026-03-08 19:49:52 CET] [ INFO  ] run_evolution                  | Mutation 9/10 skipped (probability or validation)
+[2026-03-08 19:49:52 CET] [ INFO  ] run_evolution                  | Mutation 10/10 skipped (probability or validation)
+[2026-03-08 19:49:52 CET] [ INFO  ] run_evolution                  | Generation 11 operator summary | crossovers=4 skipped_crossovers=6 mutations=3 skipped_mutations=7
+[2026-03-08 19:50:23 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2938430131 fitness=-2938430131
+[2026-03-08 19:50:52 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2884916689 fitness=-2884916689
+[2026-03-08 19:51:21 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2874511799 fitness=-2874511799
+[2026-03-08 19:51:50 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2892104478 fitness=-2892104478
+[2026-03-08 19:52:18 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2723295792 fitness=-2723295792
+[2026-03-08 19:52:50 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=3462408644 fitness=-3462408644
+[2026-03-08 19:53:19 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2889326173 fitness=-2889326173
+[2026-03-08 19:53:19 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-08 19:53:19 CET] [ INFO  ] run_evolution                  | === Generation 12 | Population: 10 | Mutation prob: 0.56 | Crossover prob: 0.56 | Mutation rounds: 1 ===
+[2026-03-08 19:53:19 CET] [ INFO  ] run_evolution                  | Generation 12 best fitness: -2688065795.0000000000
+[2026-03-08 19:56:51 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=12, prob=0.56)
+[2026-03-08 19:56:51 CET] [ INFO  ] run_evolution                  | Crossover 1/10 succeeded with 1 offspring
+[2026-03-08 20:02:24 CET] [ INFO  ] LLMCrossover._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 20:02:24 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=12, prob=0.56)
+[2026-03-08 20:02:24 CET] [ INFO  ] run_evolution                  | Crossover 2/10 succeeded with 1 offspring
+[2026-03-08 20:05:22 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=12, prob=0.56)
+[2026-03-08 20:05:22 CET] [ INFO  ] run_evolution                  | Crossover 3/10 succeeded with 1 offspring
+[2026-03-08 20:05:22 CET] [ INFO  ] run_evolution                  | Crossover 4/10 skipped (probability or validation)
+[2026-03-08 20:07:40 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=12, prob=0.56)
+[2026-03-08 20:07:40 CET] [ INFO  ] run_evolution                  | Crossover 5/10 succeeded with 1 offspring
+[2026-03-08 20:10:39 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=12, prob=0.56)
+[2026-03-08 20:10:39 CET] [ INFO  ] run_evolution                  | Crossover 6/10 succeeded with 1 offspring
+[2026-03-08 20:14:56 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=12, prob=0.56)
+[2026-03-08 20:14:56 CET] [ INFO  ] run_evolution                  | Crossover 7/10 succeeded with 1 offspring
+[2026-03-08 20:14:56 CET] [ INFO  ] run_evolution                  | Crossover 8/10 skipped (probability or validation)
+[2026-03-08 20:14:56 CET] [ INFO  ] run_evolution                  | Crossover 9/10 skipped (probability or validation)
+[2026-03-08 20:14:56 CET] [ INFO  ] run_evolution                  | Crossover 10/10 skipped (probability or validation)
+[2026-03-08 20:14:56 CET] [ INFO  ] run_evolution                  | Mutation 1/10 skipped (probability or validation)
+[2026-03-08 20:19:09 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Branch Elimination (gen=12, prob=0.56)
+[2026-03-08 20:19:09 CET] [ INFO  ] run_evolution                  | Mutation 2/10 succeeded
+[2026-03-08 20:19:09 CET] [ INFO  ] run_evolution                  | Mutation 3/10 skipped (probability or validation)
+[2026-03-08 20:19:09 CET] [ INFO  ] run_evolution                  | Mutation 4/10 skipped (probability or validation)
+[2026-03-08 20:21:31 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Substitution Profile Precomputation (gen=12, prob=0.56)
+[2026-03-08 20:21:31 CET] [ INFO  ] run_evolution                  | Mutation 5/10 succeeded
+[2026-03-08 20:27:21 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 20:27:21 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Pointer Arithmetic Simplification (gen=12, prob=0.56)
+[2026-03-08 20:27:21 CET] [ INFO  ] run_evolution                  | Mutation 6/10 succeeded
+[2026-03-08 20:38:41 CET] [WARNING] LLMMutation._generate_valid_code | LLM generation failed on attempt 4: HTTP Error 400: Bad Request
+[2026-03-08 20:38:41 CET] [WARNING] LLMMutation.__call__           | Mutation candidate could not be validated
+[2026-03-08 20:38:41 CET] [ INFO  ] run_evolution                  | Mutation 7/10 skipped (probability or validation)
+[2026-03-08 20:38:41 CET] [ INFO  ] run_evolution                  | Mutation 8/10 skipped (probability or validation)
+[2026-03-08 20:54:05 CET] [WARNING] LLMMutation._generate_valid_code | Could not extract code from LLM response on attempt 3
+[2026-03-08 20:54:05 CET] [WARNING] LLMMutation.__call__           | Mutation candidate could not be validated
+[2026-03-08 20:54:05 CET] [ INFO  ] run_evolution                  | Mutation 9/10 skipped (probability or validation)
+[2026-03-08 20:54:05 CET] [ INFO  ] run_evolution                  | Mutation 10/10 skipped (probability or validation)
+[2026-03-08 20:54:05 CET] [ INFO  ] run_evolution                  | Generation 12 operator summary | crossovers=6 skipped_crossovers=4 mutations=3 skipped_mutations=7
+[2026-03-08 20:54:36 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2889674543 fitness=-2889674543
+[2026-03-08 20:55:04 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2760102465 fitness=-2760102465
+[2026-03-08 20:55:32 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2804327029 fitness=-2804327029
+[2026-03-08 20:56:00 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2745430316 fitness=-2745430316
+[2026-03-08 20:56:29 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2757967767 fitness=-2757967767
+[2026-03-08 20:57:07 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2818575532 fitness=-2818575532
+[2026-03-08 20:57:36 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2756529502 fitness=-2756529502
+[2026-03-08 20:57:36 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-08 20:57:36 CET] [ INFO  ] run_evolution                  | === Generation 13 | Population: 10 | Mutation prob: 0.52 | Crossover prob: 0.52 | Mutation rounds: 1 ===
+[2026-03-08 20:57:36 CET] [ INFO  ] run_evolution                  | Generation 13 best fitness: -2688065795.0000000000
+[2026-03-08 20:59:30 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=13, prob=0.52)
+[2026-03-08 20:59:30 CET] [ INFO  ] run_evolution                  | Crossover 1/10 succeeded with 1 offspring
+[2026-03-08 21:03:50 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=13, prob=0.52)
+[2026-03-08 21:03:50 CET] [ INFO  ] run_evolution                  | Crossover 2/10 succeeded with 1 offspring
+[2026-03-08 21:03:50 CET] [ INFO  ] run_evolution                  | Crossover 3/10 skipped (probability or validation)
+[2026-03-08 21:03:50 CET] [ INFO  ] run_evolution                  | Crossover 4/10 skipped (probability or validation)
+[2026-03-08 21:03:50 CET] [ INFO  ] run_evolution                  | Crossover 5/10 skipped (probability or validation)
+[2026-03-08 21:06:18 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=13, prob=0.52)
+[2026-03-08 21:06:18 CET] [ INFO  ] run_evolution                  | Crossover 6/10 succeeded with 1 offspring
+[2026-03-08 21:10:25 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=13, prob=0.52)
+[2026-03-08 21:10:25 CET] [ INFO  ] run_evolution                  | Crossover 7/10 succeeded with 1 offspring
+[2026-03-08 21:10:25 CET] [ INFO  ] run_evolution                  | Crossover 8/10 skipped (probability or validation)
+[2026-03-08 21:10:25 CET] [ INFO  ] run_evolution                  | Crossover 9/10 skipped (probability or validation)
+[2026-03-08 21:13:26 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=13, prob=0.52)
+[2026-03-08 21:13:26 CET] [ INFO  ] run_evolution                  | Crossover 10/10 succeeded with 1 offspring
+[2026-03-08 21:13:26 CET] [ INFO  ] run_evolution                  | Mutation 1/10 skipped (probability or validation)
+[2026-03-08 21:16:24 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Instruction Scheduling (gen=13, prob=0.52)
+[2026-03-08 21:16:24 CET] [ INFO  ] run_evolution                  | Mutation 2/10 succeeded
+[2026-03-08 21:16:24 CET] [ INFO  ] run_evolution                  | Mutation 3/10 skipped (probability or validation)
+[2026-03-08 21:18:46 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Pointer Arithmetic Simplification (gen=13, prob=0.52)
+[2026-03-08 21:18:46 CET] [ INFO  ] run_evolution                  | Mutation 4/10 succeeded
+[2026-03-08 21:18:46 CET] [ INFO  ] run_evolution                  | Mutation 5/10 skipped (probability or validation)
+[2026-03-08 21:18:46 CET] [ INFO  ] run_evolution                  | Mutation 6/10 skipped (probability or validation)
+[2026-03-08 21:30:04 CET] [WARNING] LLMMutation._generate_valid_code | Could not extract code from LLM response on attempt 4
+[2026-03-08 21:30:04 CET] [WARNING] LLMMutation.__call__           | Mutation candidate could not be validated
+[2026-03-08 21:30:04 CET] [ INFO  ] run_evolution                  | Mutation 7/10 skipped (probability or validation)
+[2026-03-08 21:32:33 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Branch Elimination (gen=13, prob=0.52)
+[2026-03-08 21:32:33 CET] [ INFO  ] run_evolution                  | Mutation 8/10 succeeded
+[2026-03-08 21:34:45 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Register Pressure Reduction (gen=13, prob=0.52)
+[2026-03-08 21:34:45 CET] [ INFO  ] run_evolution                  | Mutation 9/10 succeeded
+[2026-03-08 21:34:45 CET] [ INFO  ] run_evolution                  | Mutation 10/10 skipped (probability or validation)
+[2026-03-08 21:34:45 CET] [ INFO  ] run_evolution                  | Generation 13 operator summary | crossovers=5 skipped_crossovers=5 mutations=4 skipped_mutations=6
+[2026-03-08 21:35:14 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2725640926 fitness=-2725640926
+[2026-03-08 21:35:42 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2762259232 fitness=-2762259232
+[2026-03-08 21:36:11 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2760092514 fitness=-2760092514
+[2026-03-08 21:36:39 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2768485518 fitness=-2768485518
+[2026-03-08 21:37:07 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2759221525 fitness=-2759221525
+[2026-03-08 21:37:46 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2779594602 fitness=-2779594602
+[2026-03-08 21:38:13 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2763154668 fitness=-2763154668
+[2026-03-08 21:38:42 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2799768050 fitness=-2799768050
+[2026-03-08 21:38:42 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-08 21:38:42 CET] [ INFO  ] run_evolution                  | === Generation 14 | Population: 10 | Mutation prob: 0.48 | Crossover prob: 0.48 | Mutation rounds: 1 ===
+[2026-03-08 21:38:42 CET] [ INFO  ] run_evolution                  | Generation 14 best fitness: -2688065795.0000000000
+[2026-03-08 21:38:42 CET] [ INFO  ] run_evolution                  | Crossover 1/10 skipped (probability or validation)
+[2026-03-08 21:38:42 CET] [ INFO  ] run_evolution                  | Crossover 2/10 skipped (probability or validation)
+[2026-03-08 21:40:35 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=14, prob=0.48)
+[2026-03-08 21:40:35 CET] [ INFO  ] run_evolution                  | Crossover 3/10 succeeded with 1 offspring
+[2026-03-08 21:40:35 CET] [ INFO  ] run_evolution                  | Crossover 4/10 skipped (probability or validation)
+[2026-03-08 21:44:15 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=14, prob=0.48)
+[2026-03-08 21:44:15 CET] [ INFO  ] run_evolution                  | Crossover 5/10 succeeded with 1 offspring
+[2026-03-08 21:44:15 CET] [ INFO  ] run_evolution                  | Crossover 6/10 skipped (probability or validation)
+[2026-03-08 21:47:38 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=14, prob=0.48)
+[2026-03-08 21:47:38 CET] [ INFO  ] run_evolution                  | Crossover 7/10 succeeded with 1 offspring
+[2026-03-08 21:51:25 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=14, prob=0.48)
+[2026-03-08 21:51:25 CET] [ INFO  ] run_evolution                  | Crossover 8/10 succeeded with 1 offspring
+[2026-03-08 21:54:30 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=14, prob=0.48)
+[2026-03-08 21:54:30 CET] [ INFO  ] run_evolution                  | Crossover 9/10 succeeded with 1 offspring
+[2026-03-08 21:54:30 CET] [ INFO  ] run_evolution                  | Crossover 10/10 skipped (probability or validation)
+[2026-03-08 21:54:30 CET] [ INFO  ] run_evolution                  | Mutation 1/10 skipped (probability or validation)
+[2026-03-08 22:05:48 CET] [WARNING] LLMMutation._generate_valid_code | LLM generation failed on attempt 5: HTTP Error 400: Bad Request
+[2026-03-08 22:05:48 CET] [WARNING] LLMMutation.__call__           | Mutation candidate could not be validated
+[2026-03-08 22:05:48 CET] [ INFO  ] run_evolution                  | Mutation 2/10 skipped (probability or validation)
+[2026-03-08 22:05:48 CET] [ INFO  ] run_evolution                  | Mutation 3/10 skipped (probability or validation)
+[2026-03-08 22:11:58 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Rolling Diagonal Buffers (gen=14, prob=0.48)
+[2026-03-08 22:11:58 CET] [ INFO  ] run_evolution                  | Mutation 4/10 succeeded
+[2026-03-08 22:11:58 CET] [ INFO  ] run_evolution                  | Mutation 5/10 skipped (probability or validation)
+[2026-03-08 22:14:40 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: LMUL Tuning (gen=14, prob=0.48)
+[2026-03-08 22:14:40 CET] [ INFO  ] run_evolution                  | Mutation 6/10 succeeded
+[2026-03-08 22:14:40 CET] [ INFO  ] run_evolution                  | Mutation 7/10 skipped (probability or validation)
+[2026-03-08 22:14:40 CET] [ INFO  ] run_evolution                  | Mutation 8/10 skipped (probability or validation)
+[2026-03-08 22:18:11 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Instruction Scheduling (gen=14, prob=0.48)
+[2026-03-08 22:18:11 CET] [ INFO  ] run_evolution                  | Mutation 9/10 succeeded
+[2026-03-08 22:20:57 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Loop Unrolling (gen=14, prob=0.48)
+[2026-03-08 22:20:57 CET] [ INFO  ] run_evolution                  | Mutation 10/10 succeeded
+[2026-03-08 22:20:57 CET] [ INFO  ] run_evolution                  | Generation 14 operator summary | crossovers=5 skipped_crossovers=5 mutations=4 skipped_mutations=6
+[2026-03-08 22:21:27 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2716753942 fitness=-2716753942
+[2026-03-08 22:21:55 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2770230481 fitness=-2770230481
+[2026-03-08 22:22:23 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2752512268 fitness=-2752512268
+[2026-03-08 22:22:52 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2768332930 fitness=-2768332930
+[2026-03-08 22:23:21 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2864714467 fitness=-2864714467
+[2026-03-08 22:23:48 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2659037372 fitness=-2659037372
+[2026-03-08 22:24:17 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=3057981096 fitness=-3057981096
+[2026-03-08 22:24:46 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2764850518 fitness=-2764850518
+[2026-03-08 22:24:56 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-08 22:24:56 CET] [ INFO  ] run_evolution                  | === Generation 15 | Population: 10 | Mutation prob: 0.45 | Crossover prob: 0.45 | Mutation rounds: 1 ===
+[2026-03-08 22:24:56 CET] [ INFO  ] run_evolution                  | Generation 15 best fitness: -2659037372.0000000000
+[2026-03-08 22:24:56 CET] [ INFO  ] run_evolution                  | New overall best fitness: -2659037372.0000000000
+[2026-03-08 22:24:56 CET] [ INFO  ] run_evolution                  | Crossover 1/10 skipped (probability or validation)
+[2026-03-08 22:24:56 CET] [ INFO  ] run_evolution                  | Crossover 2/10 skipped (probability or validation)
+[2026-03-08 22:24:56 CET] [ INFO  ] run_evolution                  | Crossover 3/10 skipped (probability or validation)
+[2026-03-08 22:24:56 CET] [ INFO  ] run_evolution                  | Crossover 4/10 skipped (probability or validation)
+[2026-03-08 22:27:43 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=15, prob=0.45)
+[2026-03-08 22:27:43 CET] [ INFO  ] run_evolution                  | Crossover 5/10 succeeded with 1 offspring
+[2026-03-08 22:29:34 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=15, prob=0.45)
+[2026-03-08 22:29:34 CET] [ INFO  ] run_evolution                  | Crossover 6/10 succeeded with 1 offspring
+[2026-03-08 22:29:34 CET] [ INFO  ] run_evolution                  | Crossover 7/10 skipped (probability or validation)
+[2026-03-08 22:29:34 CET] [ INFO  ] run_evolution                  | Crossover 8/10 skipped (probability or validation)
+[2026-03-08 22:29:34 CET] [ INFO  ] run_evolution                  | Crossover 9/10 skipped (probability or validation)
+[2026-03-08 22:32:12 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=15, prob=0.45)
+[2026-03-08 22:32:12 CET] [ INFO  ] run_evolution                  | Crossover 10/10 succeeded with 1 offspring
+[2026-03-08 22:32:12 CET] [ INFO  ] run_evolution                  | Mutation 1/10 skipped (probability or validation)
+[2026-03-08 22:36:55 CET] [ INFO  ] LLMMutation._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 22:36:55 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Tail Loop Optimization (gen=15, prob=0.45)
+[2026-03-08 22:36:55 CET] [ INFO  ] run_evolution                  | Mutation 2/10 succeeded
+[2026-03-08 22:36:55 CET] [ INFO  ] run_evolution                  | Mutation 3/10 skipped (probability or validation)
+[2026-03-08 22:36:55 CET] [ INFO  ] run_evolution                  | Mutation 4/10 skipped (probability or validation)
+[2026-03-08 22:38:51 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Register Pressure Reduction (gen=15, prob=0.45)
+[2026-03-08 22:38:51 CET] [ INFO  ] run_evolution                  | Mutation 5/10 succeeded
+[2026-03-08 22:41:07 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: VL and VTYPE Control (gen=15, prob=0.45)
+[2026-03-08 22:41:07 CET] [ INFO  ] run_evolution                  | Mutation 6/10 succeeded
+[2026-03-08 22:43:03 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Traversal and Layout Co-design (gen=15, prob=0.45)
+[2026-03-08 22:43:03 CET] [ INFO  ] run_evolution                  | Mutation 7/10 succeeded
+[2026-03-08 22:46:29 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Pointer Arithmetic Simplification (gen=15, prob=0.45)
+[2026-03-08 22:46:29 CET] [ INFO  ] run_evolution                  | Mutation 8/10 succeeded
+[2026-03-08 22:46:29 CET] [ INFO  ] run_evolution                  | Mutation 9/10 skipped (probability or validation)
+[2026-03-08 22:46:29 CET] [ INFO  ] run_evolution                  | Mutation 10/10 skipped (probability or validation)
+[2026-03-08 22:46:29 CET] [ INFO  ] run_evolution                  | Generation 15 operator summary | crossovers=3 skipped_crossovers=7 mutations=5 skipped_mutations=5
+[2026-03-08 22:46:58 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2624581962 fitness=-2624581962
+[2026-03-08 22:47:26 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2741393384 fitness=-2741393384
+[2026-03-08 22:47:54 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2752706341 fitness=-2752706341
+[2026-03-08 22:48:21 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2742712485 fitness=-2742712485
+[2026-03-08 22:48:49 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2707893729 fitness=-2707893729
+[2026-03-08 22:49:17 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2701984616 fitness=-2701984616
+[2026-03-08 22:49:45 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2720842268 fitness=-2720842268
+[2026-03-08 22:50:13 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2707522055 fitness=-2707522055
+[2026-03-08 22:50:13 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-08 22:50:13 CET] [ INFO  ] run_evolution                  | === Generation 16 | Population: 10 | Mutation prob: 0.41 | Crossover prob: 0.41 | Mutation rounds: 1 ===
+[2026-03-08 22:50:13 CET] [ INFO  ] run_evolution                  | Generation 16 best fitness: -2624581962.0000000000
+[2026-03-08 22:50:13 CET] [ INFO  ] run_evolution                  | New overall best fitness: -2624581962.0000000000
+[2026-03-08 22:50:13 CET] [ INFO  ] run_evolution                  | Crossover 1/10 skipped (probability or validation)
+[2026-03-08 22:52:29 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=16, prob=0.41)
+[2026-03-08 22:52:29 CET] [ INFO  ] run_evolution                  | Crossover 2/10 succeeded with 1 offspring
+[2026-03-08 22:52:29 CET] [ INFO  ] run_evolution                  | Crossover 3/10 skipped (probability or validation)
+[2026-03-08 22:54:44 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=16, prob=0.41)
+[2026-03-08 22:54:44 CET] [ INFO  ] run_evolution                  | Crossover 4/10 succeeded with 1 offspring
+[2026-03-08 23:01:26 CET] [ INFO  ] LLMCrossover._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-08 23:01:26 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=16, prob=0.41)
+[2026-03-08 23:01:26 CET] [ INFO  ] run_evolution                  | Crossover 5/10 succeeded with 1 offspring
+[2026-03-08 23:03:05 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=16, prob=0.41)
+[2026-03-08 23:03:05 CET] [ INFO  ] run_evolution                  | Crossover 6/10 succeeded with 1 offspring
+[2026-03-08 23:03:05 CET] [ INFO  ] run_evolution                  | Crossover 7/10 skipped (probability or validation)
+[2026-03-08 23:03:05 CET] [ INFO  ] run_evolution                  | Crossover 8/10 skipped (probability or validation)
+[2026-03-08 23:04:58 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=16, prob=0.41)
+[2026-03-08 23:04:58 CET] [ INFO  ] run_evolution                  | Crossover 9/10 succeeded with 1 offspring
+[2026-03-08 23:06:50 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=16, prob=0.41)
+[2026-03-08 23:06:50 CET] [ INFO  ] run_evolution                  | Crossover 10/10 succeeded with 1 offspring
+[2026-03-08 23:08:45 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Register Pressure Reduction (gen=16, prob=0.41)
+[2026-03-08 23:08:45 CET] [ INFO  ] run_evolution                  | Mutation 1/10 succeeded
+[2026-03-08 23:08:45 CET] [ INFO  ] run_evolution                  | Mutation 2/10 skipped (probability or validation)
+[2026-03-08 23:08:45 CET] [ INFO  ] run_evolution                  | Mutation 3/10 skipped (probability or validation)
+[2026-03-08 23:12:45 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: VLEN-specific Specialization (gen=16, prob=0.41)
+[2026-03-08 23:12:45 CET] [ INFO  ] run_evolution                  | Mutation 4/10 succeeded
+[2026-03-08 23:12:45 CET] [ INFO  ] run_evolution                  | Mutation 5/10 skipped (probability or validation)
+[2026-03-08 23:17:02 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Branch Elimination (gen=16, prob=0.41)
+[2026-03-08 23:17:02 CET] [ INFO  ] run_evolution                  | Mutation 6/10 succeeded
+[2026-03-08 23:27:48 CET] [WARNING] LLMMutation._generate_valid_code | Could not extract code from LLM response on attempt 4
+[2026-03-08 23:27:48 CET] [WARNING] LLMMutation.__call__           | Mutation candidate could not be validated
+[2026-03-08 23:27:48 CET] [ INFO  ] run_evolution                  | Mutation 7/10 skipped (probability or validation)
+[2026-03-08 23:27:48 CET] [ INFO  ] run_evolution                  | Mutation 8/10 skipped (probability or validation)
+[2026-03-08 23:27:48 CET] [ INFO  ] run_evolution                  | Mutation 9/10 skipped (probability or validation)
+[2026-03-08 23:27:48 CET] [ INFO  ] run_evolution                  | Mutation 10/10 skipped (probability or validation)
+[2026-03-08 23:27:48 CET] [ INFO  ] run_evolution                  | Generation 16 operator summary | crossovers=6 skipped_crossovers=4 mutations=3 skipped_mutations=7
+[2026-03-08 23:28:18 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2841377657 fitness=-2841377657
+[2026-03-08 23:28:45 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2706479067 fitness=-2706479067
+[2026-03-08 23:29:13 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2716533281 fitness=-2716533281
+[2026-03-08 23:29:41 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2712628885 fitness=-2712628885
+[2026-03-08 23:30:09 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2721311198 fitness=-2721311198
+[2026-03-08 23:30:36 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2651330290 fitness=-2651330290
+[2026-03-08 23:31:04 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2619060417 fitness=-2619060417
+[2026-03-08 23:31:34 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2716345858 fitness=-2716345858
+[2026-03-08 23:32:02 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2693496393 fitness=-2693496393
+[2026-03-08 23:32:02 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-08 23:32:02 CET] [ INFO  ] run_evolution                  | === Generation 17 | Population: 10 | Mutation prob: 0.37 | Crossover prob: 0.37 | Mutation rounds: 1 ===
+[2026-03-08 23:32:02 CET] [ INFO  ] run_evolution                  | Generation 17 best fitness: -2619060417.0000000000
+[2026-03-08 23:32:02 CET] [ INFO  ] run_evolution                  | New overall best fitness: -2619060417.0000000000
+[2026-03-08 23:35:34 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=17, prob=0.37)
+[2026-03-08 23:35:34 CET] [ INFO  ] run_evolution                  | Crossover 1/10 succeeded with 1 offspring
+[2026-03-08 23:37:31 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=17, prob=0.37)
+[2026-03-08 23:37:31 CET] [ INFO  ] run_evolution                  | Crossover 2/10 succeeded with 1 offspring
+[2026-03-08 23:37:31 CET] [ INFO  ] run_evolution                  | Crossover 3/10 skipped (probability or validation)
+[2026-03-08 23:37:31 CET] [ INFO  ] run_evolution                  | Crossover 4/10 skipped (probability or validation)
+[2026-03-08 23:37:31 CET] [ INFO  ] run_evolution                  | Crossover 5/10 skipped (probability or validation)
+[2026-03-08 23:37:31 CET] [ INFO  ] run_evolution                  | Crossover 6/10 skipped (probability or validation)
+[2026-03-08 23:39:30 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=17, prob=0.37)
+[2026-03-08 23:39:30 CET] [ INFO  ] run_evolution                  | Crossover 7/10 succeeded with 1 offspring
+[2026-03-08 23:41:59 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=17, prob=0.37)
+[2026-03-08 23:41:59 CET] [ INFO  ] run_evolution                  | Crossover 8/10 succeeded with 1 offspring
+[2026-03-08 23:41:59 CET] [ INFO  ] run_evolution                  | Crossover 9/10 skipped (probability or validation)
+[2026-03-08 23:43:57 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=17, prob=0.37)
+[2026-03-08 23:43:57 CET] [ INFO  ] run_evolution                  | Crossover 10/10 succeeded with 1 offspring
+[2026-03-08 23:46:58 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Software Pipelining (gen=17, prob=0.37)
+[2026-03-08 23:46:58 CET] [ INFO  ] run_evolution                  | Mutation 1/10 succeeded
+[2026-03-08 23:46:58 CET] [ INFO  ] run_evolution                  | Mutation 2/10 skipped (probability or validation)
+[2026-03-08 23:46:58 CET] [ INFO  ] run_evolution                  | Mutation 3/10 skipped (probability or validation)
+[2026-03-08 23:46:58 CET] [ INFO  ] run_evolution                  | Mutation 4/10 skipped (probability or validation)
+[2026-03-08 23:46:58 CET] [ INFO  ] run_evolution                  | Mutation 5/10 skipped (probability or validation)
+[2026-03-08 23:55:04 CET] [WARNING] LLMMutation._generate_valid_code | LLM generation failed on attempt 3: HTTP Error 400: Bad Request
+[2026-03-08 23:55:04 CET] [WARNING] LLMMutation.__call__           | Mutation candidate could not be validated
+[2026-03-08 23:55:04 CET] [ INFO  ] run_evolution                  | Mutation 6/10 skipped (probability or validation)
+[2026-03-08 23:57:03 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Register Pressure Reduction (gen=17, prob=0.37)
+[2026-03-08 23:57:03 CET] [ INFO  ] run_evolution                  | Mutation 7/10 succeeded
+[2026-03-08 23:59:53 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Pointer Arithmetic Simplification (gen=17, prob=0.37)
+[2026-03-08 23:59:53 CET] [ INFO  ] run_evolution                  | Mutation 8/10 succeeded
+[2026-03-09 00:02:56 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Register Pressure Reduction (gen=17, prob=0.37)
+[2026-03-09 00:02:56 CET] [ INFO  ] run_evolution                  | Mutation 9/10 succeeded
+[2026-03-09 00:05:34 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Software Pipelining (gen=17, prob=0.37)
+[2026-03-09 00:05:34 CET] [ INFO  ] run_evolution                  | Mutation 10/10 succeeded
+[2026-03-09 00:05:34 CET] [ INFO  ] run_evolution                  | Generation 17 operator summary | crossovers=5 skipped_crossovers=5 mutations=5 skipped_mutations=5
+[2026-03-09 00:06:04 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2709762056 fitness=-2709762056
+[2026-03-09 00:06:31 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2618618258 fitness=-2618618258
+[2026-03-09 00:06:58 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2651633621 fitness=-2651633621
+[2026-03-09 00:07:26 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2664368089 fitness=-2664368089
+[2026-03-09 00:07:53 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2630749239 fitness=-2630749239
+[2026-03-09 00:08:21 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2626567563 fitness=-2626567563
+[2026-03-09 00:08:48 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2722162621 fitness=-2722162621
+[2026-03-09 00:09:25 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2700539669 fitness=-2700539669
+[2026-03-09 00:09:31 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-09 00:09:31 CET] [ INFO  ] run_evolution                  | === Generation 18 | Population: 10 | Mutation prob: 0.34 | Crossover prob: 0.34 | Mutation rounds: 1 ===
+[2026-03-09 00:09:31 CET] [ INFO  ] run_evolution                  | Generation 18 best fitness: -2618618258.0000000000
+[2026-03-09 00:09:31 CET] [ INFO  ] run_evolution                  | New overall best fitness: -2618618258.0000000000
+[2026-03-09 00:09:31 CET] [ INFO  ] run_evolution                  | Crossover 1/10 skipped (probability or validation)
+[2026-03-09 00:11:38 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=18, prob=0.34)
+[2026-03-09 00:11:38 CET] [ INFO  ] run_evolution                  | Crossover 2/10 succeeded with 1 offspring
+[2026-03-09 00:14:17 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=18, prob=0.34)
+[2026-03-09 00:14:17 CET] [ INFO  ] run_evolution                  | Crossover 3/10 succeeded with 1 offspring
+[2026-03-09 00:14:17 CET] [ INFO  ] run_evolution                  | Crossover 4/10 skipped (probability or validation)
+[2026-03-09 00:14:17 CET] [ INFO  ] run_evolution                  | Crossover 5/10 skipped (probability or validation)
+[2026-03-09 00:14:17 CET] [ INFO  ] run_evolution                  | Crossover 6/10 skipped (probability or validation)
+[2026-03-09 00:14:17 CET] [ INFO  ] run_evolution                  | Crossover 7/10 skipped (probability or validation)
+[2026-03-09 00:16:29 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=18, prob=0.34)
+[2026-03-09 00:16:29 CET] [ INFO  ] run_evolution                  | Crossover 8/10 succeeded with 1 offspring
+[2026-03-09 00:16:29 CET] [ INFO  ] run_evolution                  | Crossover 9/10 skipped (probability or validation)
+[2026-03-09 00:16:29 CET] [ INFO  ] run_evolution                  | Crossover 10/10 skipped (probability or validation)
+[2026-03-09 00:16:29 CET] [ INFO  ] run_evolution                  | Mutation 1/10 skipped (probability or validation)
+[2026-03-09 00:16:29 CET] [ INFO  ] run_evolution                  | Mutation 2/10 skipped (probability or validation)
+[2026-03-09 00:18:23 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: LMUL Tuning (gen=18, prob=0.34)
+[2026-03-09 00:18:23 CET] [ INFO  ] run_evolution                  | Mutation 3/10 succeeded
+[2026-03-09 00:18:23 CET] [ INFO  ] run_evolution                  | Mutation 4/10 skipped (probability or validation)
+[2026-03-09 00:20:19 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Sequence Pre-encoding (gen=18, prob=0.34)
+[2026-03-09 00:20:19 CET] [ INFO  ] run_evolution                  | Mutation 5/10 succeeded
+[2026-03-09 00:22:38 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Loop Unrolling (gen=18, prob=0.34)
+[2026-03-09 00:22:38 CET] [ INFO  ] run_evolution                  | Mutation 6/10 succeeded
+[2026-03-09 00:22:38 CET] [ INFO  ] run_evolution                  | Mutation 7/10 skipped (probability or validation)
+[2026-03-09 00:22:38 CET] [ INFO  ] run_evolution                  | Mutation 8/10 skipped (probability or validation)
+[2026-03-09 00:22:38 CET] [ INFO  ] run_evolution                  | Mutation 9/10 skipped (probability or validation)
+[2026-03-09 00:22:38 CET] [ INFO  ] run_evolution                  | Mutation 10/10 skipped (probability or validation)
+[2026-03-09 00:22:38 CET] [ INFO  ] run_evolution                  | Generation 18 operator summary | crossovers=3 skipped_crossovers=7 mutations=3 skipped_mutations=7
+[2026-03-09 00:23:06 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2604381399 fitness=-2604381399
+[2026-03-09 00:23:44 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2627924354 fitness=-2627924354
+[2026-03-09 00:24:10 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2604243288 fitness=-2604243288
+[2026-03-09 00:24:38 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2629387752 fitness=-2629387752
+[2026-03-09 00:24:38 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-09 00:24:38 CET] [ INFO  ] run_evolution                  | === Generation 19 | Population: 10 | Mutation prob: 0.30 | Crossover prob: 0.30 | Mutation rounds: 1 ===
+[2026-03-09 00:24:38 CET] [ INFO  ] run_evolution                  | Generation 19 best fitness: -2604243288.0000000000
+[2026-03-09 00:24:38 CET] [ INFO  ] run_evolution                  | New overall best fitness: -2604243288.0000000000
+[2026-03-09 00:24:38 CET] [ INFO  ] run_evolution                  | Crossover 1/10 skipped (probability or validation)
+[2026-03-09 00:24:38 CET] [ INFO  ] run_evolution                  | Crossover 2/10 skipped (probability or validation)
+[2026-03-09 00:26:29 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=19, prob=0.30)
+[2026-03-09 00:26:29 CET] [ INFO  ] run_evolution                  | Crossover 3/10 succeeded with 1 offspring
+[2026-03-09 00:30:30 CET] [ INFO  ] LLMCrossover._generate_valid_code | Candidate repaired successfully after 1 retry(s)
+[2026-03-09 00:30:30 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=19, prob=0.30)
+[2026-03-09 00:30:30 CET] [ INFO  ] run_evolution                  | Crossover 4/10 succeeded with 1 offspring
+[2026-03-09 00:30:30 CET] [ INFO  ] run_evolution                  | Crossover 5/10 skipped (probability or validation)
+[2026-03-09 00:30:30 CET] [ INFO  ] run_evolution                  | Crossover 6/10 skipped (probability or validation)
+[2026-03-09 00:33:10 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=19, prob=0.30)
+[2026-03-09 00:33:10 CET] [ INFO  ] run_evolution                  | Crossover 7/10 succeeded with 1 offspring
+[2026-03-09 00:35:43 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=19, prob=0.30)
+[2026-03-09 00:35:43 CET] [ INFO  ] run_evolution                  | Crossover 8/10 succeeded with 1 offspring
+[2026-03-09 00:35:43 CET] [ INFO  ] run_evolution                  | Crossover 9/10 skipped (probability or validation)
+[2026-03-09 00:37:39 CET] [ INFO  ] LLMCrossover.__call__          | Crossover validated successfully (gen=19, prob=0.30)
+[2026-03-09 00:37:39 CET] [ INFO  ] run_evolution                  | Crossover 10/10 succeeded with 1 offspring
+[2026-03-09 00:40:02 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Software Pipelining (gen=19, prob=0.30)
+[2026-03-09 00:40:02 CET] [ INFO  ] run_evolution                  | Mutation 1/10 succeeded
+[2026-03-09 00:40:02 CET] [ INFO  ] run_evolution                  | Mutation 2/10 skipped (probability or validation)
+[2026-03-09 00:42:21 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: LMUL Tuning (gen=19, prob=0.30)
+[2026-03-09 00:42:21 CET] [ INFO  ] run_evolution                  | Mutation 3/10 succeeded
+[2026-03-09 00:42:21 CET] [ INFO  ] run_evolution                  | Mutation 4/10 skipped (probability or validation)
+[2026-03-09 00:42:21 CET] [ INFO  ] run_evolution                  | Mutation 5/10 skipped (probability or validation)
+[2026-03-09 00:42:21 CET] [ INFO  ] run_evolution                  | Mutation 6/10 skipped (probability or validation)
+[2026-03-09 00:42:21 CET] [ INFO  ] run_evolution                  | Mutation 7/10 skipped (probability or validation)
+[2026-03-09 00:45:01 CET] [ INFO  ] LLMMutation.__call__           | Mutation validated successfully: Pointer Arithmetic Simplification (gen=19, prob=0.30)
+[2026-03-09 00:45:01 CET] [ INFO  ] run_evolution                  | Mutation 8/10 succeeded
+[2026-03-09 00:45:01 CET] [ INFO  ] run_evolution                  | Mutation 9/10 skipped (probability or validation)
+[2026-03-09 00:45:01 CET] [ INFO  ] run_evolution                  | Mutation 10/10 skipped (probability or validation)
+[2026-03-09 00:45:01 CET] [ INFO  ] run_evolution                  | Generation 19 operator summary | crossovers=5 skipped_crossovers=5 mutations=3 skipped_mutations=7
+[2026-03-09 00:45:30 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2622516886 fitness=-2622516886
+[2026-03-09 00:45:57 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2630314450 fitness=-2630314450
+[2026-03-09 00:46:25 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2635390074 fitness=-2635390074
+[2026-03-09 00:46:52 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2601519060 fitness=-2601519060
+[2026-03-09 00:47:19 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2663697758 fitness=-2663697758
+[2026-03-09 00:47:47 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2720096037 fitness=-2720096037
+[2026-03-09 00:48:14 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2627121645 fitness=-2627121645
+[2026-03-09 00:48:42 CET] [ INFO  ] FitnessEvaluator._evaluate     | Fitness evaluated: time_ns=2595409766 fitness=-2595409766
+[2026-03-09 00:48:42 CET] [ INFO  ] run_evolution                  | After selection: 10 individuals
+[2026-03-09 00:48:42 CET] [ INFO  ] run_evolution                  | ============================================================
+[2026-03-09 00:48:42 CET] [ INFO  ] run_evolution                  | Evolution complete!
+[2026-03-09 00:48:42 CET] [ INFO  ] run_evolution                  | Best fitness: -2595409766.0000000000
+[2026-03-09 00:48:42 CET] [ INFO  ] run_evolution                  | Baseline fitness: -6976198876.0000000000
+[2026-03-09 00:48:42 CET] [ INFO  ] run_evolution                  | Speedup: 2.69x faster
+[2026-03-09 00:48:42 CET] [ INFO  ] run_evolution                  | Best kernel saved to: /Users/alejandro/Projects/risc-v-sequence-alignment/best_kernel.c
