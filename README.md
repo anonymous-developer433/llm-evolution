@@ -135,10 +135,10 @@ The library's use of Generics (`T`) ensures that you can evolve any type of obje
 uv add <package-name>
 
 # Add this library from Git (PEP 508 URL)
-uv add "llm-evolution @ git+https://github.com/alexfdez1010/llm-evolution.git"
+uv add "llm-evolution @ git+https://github.com/anonymous-developer433/llm-evolution.git"
 
 # Add from a branch or tag
-uv add "llm-evolution @ git+https://github.com/alexfdez1010/llm-evolution.git@main"
+uv add "llm-evolution @ git+https://github.com/anonymous-developer433/llm-evolution.git@main"
 
 # Example: Add requests library
 uv add requests
